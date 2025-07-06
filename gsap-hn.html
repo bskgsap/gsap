@@ -112,11 +112,17 @@
     .geeturl {
       color: black;
       margin-left: 5px;
+      font-size: 0.6em;
     }
 
-    .geeturl a {
-      color: black;
-      font-size: 0.7em;
+    .audio-icon {
+      display: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      color: #333;
+      /* Icon color */
+      vertical-align: middle;
     }
 
     .subhashitha div {
@@ -179,6 +185,11 @@
     }
 
     @media (max-width: 600px) {
+
+      .geeturl {
+        display: none
+      }
+
       .column-panchang {
         flex: 1 1 100%;
         max-width: 100%;
@@ -195,9 +206,19 @@
 
       .panchang-text,
       .panchang-date {
+        width: 100%;
         margin: 0;
         padding: 2px 0;
         display: block;
+      }
+
+      .panchang-date {
+        color: rgb(255, 94, 0);
+      }
+
+      .audio-icon {
+
+        display: inline;
       }
     }
   </style>
@@ -234,9 +255,16 @@
     <div style="font-weight: bold;" class="right-aligned">- परम पूजनीय श्री गुरुजी </div>
   </div>
   <div class="sectionheader">
-    <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span><span class="geeturl fontenglish"><a
-        href="https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk">
-        (https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk)</a></span>
+    <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span><a
+      href="https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk" target="_blank">
+      <span
+        class="geeturl fontenglish">(https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk)</span>
+
+      <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02zm2.5 0c0 3.04-1.72 5.64-4.24 6.92l1.42 1.42C19.1 18.65 21 15.53 21 12s-1.9-6.65-4.82-8.34l-1.42 1.42C17.28 6.36 19 8.96 19 12z" />
+      </svg>
+    </a>
   </div>
   <div class="table-responsive">
     <div class="column fontkannada">
