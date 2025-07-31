@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>GSAP August 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ बेंगलुरु
-    दक्षिणा विभाग आई. टी. कार्य</title>
+  <title>GSAP August 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ IT ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ बेंगलुरु
+    दक्षिणा विभाग IT कार्य </title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Kannada&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="https://www.rss.org//images/ico_2205.ico">
+
   <style>
     body {
       margin: 3px 10px 2px 10px;
@@ -169,15 +169,20 @@
       flex: 0 0 auto;
       background-color: #ffffff;
       box-sizing: border-box;
+      border: 1px solid #cac0c0;
+      padding-left: 5px;
     }
 
     .panchanga-content {
       padding-left: 8px;
+      padding-right: 5px;
     }
 
     .column-visheshadina {
       flex: 1;
       box-sizing: border-box;
+      padding-left: 15px;
+      border: 1px solid #cac0c0;
     }
 
 
@@ -191,10 +196,14 @@
         flex: 1 1 100%;
         max-width: 100%;
         min-width: 0%;
+        border:none;
+         padding-left: 0px
       }
 
       .column-visheshadina {
         flex: 1;
+        border:none;
+        padding-left: 0px
       }
 
       .pancchang-row {
@@ -361,9 +370,9 @@
 
   <div class="table-pancang-specialday">
     <div class="column-panchang">
-        <div class="sectionheader">
-    <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
-  </div>
+      <div class="sectionheader">
+        <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
+      </div>
       <div class="simple-para fontkannada ">
         ಕಲಿಯುಗಾಬ್ದ 5127, ಶಾಲಿವಾಹನ ಶಕೆ 1948, ಶ್ರೀ ವಿಶ್ವಾವಸು ಸಂವತ್ಸರ
       </div>
@@ -414,7 +423,13 @@
       </div>
     </div>
     <div class="column-visheshadina">
-      
+      <div class="sectionheader">
+        <span class="fontkannada">ತಿಂಗಳ ವಿಶೇಷ ದಿನಗಳು 
+        </span>
+      </div>
+      <div class="pancchang-row">
+        <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಶ್ರಾವಣ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ನವಮಿ ತಿಥಿ, ವಿಶಾಖಾ ನಕ್ಷತ್ರ</div>
+      </div>
     </div>
   </div>
   <div class="separator-thin"></div>
@@ -430,4 +445,5 @@
     </div>
   </div>
 </body>
+
 </html>
