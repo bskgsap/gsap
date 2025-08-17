@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>GSAP August 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ बेंगलुरु
+  <title>GSAP August 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ
+    बेंगलुरु
     दक्षिणा विभाग आई. टी. कार्य</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -141,6 +142,8 @@
       flex-wrap: nowrap;
     }
 
+
+
     .panchang-date {
       padding: 1px 1px 1px 1px;
       margin: 0px 0px 0px 8px;
@@ -201,16 +204,33 @@
         flex-direction: column;
       }
 
+      .panchang-text {
+        padding-bottom: 0px;
+      }
+
       .panchang-text,
       .panchang-date {
         width: 100%;
         margin: 0;
-        padding: 2px 0;
         display: block;
       }
 
       .panchang-date {
+        padding: 0 0 10px 0;
+      }
+
+      .panchang-highlight {
+        font-weight: normal
+      }
+
+      .panchang-highlight .panchang-date {
         color: rgb(255, 94, 0);
+
+      }
+
+      .panchang-grey {
+        color: #8d8c8c;
+        font-weight: lighter;
       }
 
       .audio-icon {
@@ -361,9 +381,9 @@
 
   <div class="table-pancang-specialday">
     <div class="column-panchang">
-        <div class="sectionheader">
-    <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
-  </div>
+      <div class="sectionheader">
+        <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
+      </div>
       <div class="simple-para fontkannada ">
         ಕಲಿಯುಗಾಬ್ದ 5127, ಶಾಲಿವಾಹನ ಶಕೆ 1948, ಶ್ರೀ ವಿಶ್ವಾವಸು ಸಂವತ್ಸರ
       </div>
@@ -414,7 +434,7 @@
       </div>
     </div>
     <div class="column-visheshadina">
-      
+
     </div>
   </div>
   <div class="separator-thin"></div>
@@ -430,4 +450,48 @@
     </div>
   </div>
 </body>
+<script type="text/javascript">
+// ...existing code...
+(function () {
+  // Format today's date as DD-Month-YYYY (e.g., 17-August-2025)
+  const today = new Date();
+  today.setHours(0,0,0,0); // Ignore time part
+
+  // Helper to parse DD-Month-YYYY to Date
+  function parseDate(str) {
+    const [day, monthName, year] = str.split('-');
+    const monthNames = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    const month = monthNames.indexOf(monthName);
+    return new Date(Number(year), month, Number(day));
+  }
+
+  // Find nearest date row
+  let nearestRow = null;
+  let nearestDiff = Infinity;
+
+  document.querySelectorAll('.pancchang-row').forEach(function (row) {
+    const dateEl = row.querySelector('.panchang-date');
+    if (dateEl) {
+      const rowDate = parseDate(dateEl.textContent.trim());
+      const diff = Math.abs(rowDate - today);
+      if (diff < nearestDiff) {
+        nearestDiff = diff;
+        nearestRow = row;
+      }
+    }
+  });
+
+  document.querySelectorAll('.pancchang-row').forEach(function (row) {
+    if (row === nearestRow) {
+      row.classList.add('panchang-highlight');
+    } else {
+      row.classList.add('panchang-grey');
+    }
+  });
+})();
+</script>
+
 </html>
