@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>GSAP October 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ
+  <title>GSAP December 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ
     बेंगलुरु
     दक्षिणा विभाग आई. टी. कार्य</title>
   <meta charset="UTF-8" />
@@ -184,6 +184,7 @@
     }
 
 
+
     @media (max-width: 600px) {
 
       .fontkannada {
@@ -252,11 +253,38 @@
       .audio-icon {
         display: inline;
       }
+
+      .audio-icon {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+
+      }
+
+      .audio-icon.large {
+        width: 36px;
+        height: 36px;
+      }
+
+
+
     }
   </style>
 </head>
 
 <body>
+
+
+  <svg style="display:none;">
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z"></path>
+    </symbol>
+
+    <symbol id="icon-pause" viewBox="0 0 24 24">
+      <path d="M6 5h4v14H6zM14 5h4v14h-4z"></path>
+    </symbol>
+  </svg>
+
 
   <div class="omkar fontdevanagari">ॐ</div>
   <div class="heder-container ">
@@ -268,28 +296,37 @@
 
   <div class="sectionheader">
     <span class="fontkannada">ಅಮೃತ ವಚನ - </span><span class="fontdevanagari">अमृतावचन</span>
+    <audio id="amruthavachanaAudio" data-playbutton="amruthavachanaAudioplay"
+      data-pausebutton="amruthavachanaAudiopause"
+      src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/GSAP/GSAP_amruthavachana_des_25.mp3"></audio>
+
+    <svg id="amruthavachanaAudioplay" class="audio-icon audio-play">
+      <use href="#icon-play"></use>
+    </svg>
+
+    <svg id="amruthavachanaAudiopause" class="audio-icon audio-pause" style="display:none;">
+      <use href="#icon-pause"></use>
+    </svg>
   </div>
   <div class="simple-para fontkannada ">
-    <p>ಭಾರತದೇಶವು ನಮ್ಮ ಮಾನವವಂಶದ ಜನನಿ, ಸಂಸ್ಕೃತವು ಯೂರೋಪಿನ ಭಾಷೆಗಳ ಮೂಲಾಧಾರ; ಭಾರತ ನಮ್ಮ ದಾರ್ಶನಿಕತೆಯ ಜನ್ಮಭೂಮಿ;
-      ಅರಬ್ಬರ ಮೂಲಕ ಅನೇಕ ಗಣಿತದ ಸಿದ್ಧಾಂತಗಳ ಮೂಲಸ್ಥಳ; ಬುದ್ಧನ ಮೂಲಕ, ಕ್ರೈಸ್ತ ಧರ್ಮದಲ್ಲಿ ಅಳವಡಿಸಲ್ಪಟ್ಟ ಅನೇಕ ಆದರ್ಶಗಳ
-      ಪ್ರೇರಣಾಕ್ಷೇತ್ರ; ಹಾಗೂ ಗ್ರಾಮ ಸ್ವ-ಆಡಳಿತ ವ್ಯವಸ್ಥೆಯ ಮೂಲಕ ಸ್ವ-ಆಡಳಿತ ಮತ್ತು ಪ್ರಜಾಪ್ರಭುತ್ವದ ಪ್ರಾಚೀನ ಶಿಕ್ಷಕಿ. ಹೀಗಾಗಿ, 'ಭಾರತ
-      ಮಾತೆ'ಯನ್ನು ವಿವಿಧ ಅರ್ಥಗಳಲ್ಲಿ ಇಡೀ ಮಾನವಕುಲದ ತಾಯಿ ಎಂದು ಕರೆಯಬಹುದು.</p>
-    <div style="font-weight: bold;" class="right-aligned">- ವಿಲ್ ಡ್ಯುರಾಂಟ್</div>
+    <p>ನಮ್ಮ ಸಮಾಜ ವ್ಯವಸ್ಥೆಯ ಅಡಿಪಾಯವು ಚತುರ್ವಿಧ ಪುರುಷಾರ್ಥಗಳ ಮೇಲೆ ಆಧಾರಿತವಾದ ಜೀವನ ದೃಷ್ಟಿಯೇ ಆಗಿದೆ ಎಂಬುದನ್ನು ನಾವು ಮರೆಯಬಾರದು. ಈ
+      ದೃಷ್ಟಿಕೋನವೇ ಭಾರತಕ್ಕೆ ವಿಶ್ವಮಟ್ಟದಲ್ಲಿ ಗೌರವ ತಂದುಕೊಟ್ಟಿದೆ. ಈ ಜೀವನ ದೃಷ್ಟಿಯು ಕೇವಲ ಕಲ್ಪನೆಯಲ್ಲ, ಬದಲಿಗೆ ಸಾವಿರಾರು ವರ್ಷಗಳ ಕಾಲ
+      ಬದುಕಿ ತೋರಿಸಿದ ವಾಸ್ತವ ಎಂಬುದಕ್ಕೆ ನಮ್ಮ ಇತಿಹಾಸವೇ ಸಾಕ್ಷಿಯಾಗಿದೆ. ವಿದೇಶಿ ಪ್ರವಾಸಿಗರು ಇಲ್ಲಿನ ಸಂಪನ್ನತೆಯ ಜೊತೆಗೆ, ಮಾನವ ಜೀವನದ
+      ಅತ್ಯುನ್ನತ ಘನತೆಯನ್ನೂ ದೃಢಪಡಿಸಿದ್ದಾರೆ.</p>
+    <div style="font-weight: bold;" class="right-aligned">- ಪರಮ ಪೂಜನೀಯ ಶ್ರೀ ಗುರೂಜಿ </div>
   </div>
   <div class="simple-para fontdevanagari">
-    <p>भारतवर्ष हमारे मानववंश की जननी है, और संस्कृत यूरोप की भाषाओं की मूलधारा। भारत हमारी दर्शन परंपरा की जन्मभूमि है;
-      अरबों के माध्यम से गणित के बहुतेरे सिद्धांतों की स्रोतभूमि; बुद्ध के द्वारा ईसाई धर्म में समाहित अनेक आदर्शों की
-      प्रेरणास्थली; तथा ग्राम स्वशासन की प्रणाली के द्वारा आत्मशासन और प्रजातंत्र की प्राचीन शिक्षिका।
-      इस प्रकार ‘भारत माता’ विविध अर्थों में सम्पूर्ण मानवता की जननी कही जा सकती है।
-
-
+    <p>हमें यह नहीं भूलना चाहिए कि चातुर्विध पुरुषार्थ पर आधारित जीवन-दृष्टि ही हमारी समाज-व्यवस्था की आधारशिला रही है,
+      जिसने भारत को विश्वमंच पर गौरव दिलाया। हमारा इतिहास इस सत्य का साक्षी है कि यह दृष्टि कल्पना नहीं, अपितु सहस्रों
+      वर्षों तक जीया गया यथार्थ रही है। विदेशी यात्रियों ने यहाँ की संपन्नता के साथ-साथ मानव जीवन की उच्चतम गरिमा की भी
+      पुष्टि की है। ।
     </p>
-    <div style="font-weight: bold;" class="right-aligned">- विल् डुरांट् </div>
+    <div style="font-weight: bold;" class="right-aligned">- परम पूजनीय श्री गुरूजी</div>
   </div>
   <div class="sectionheader">
     <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span><a
-      href="https://www.youtube.com/watch?v=z5YNXOxK5PY" target="_blank">
-      <span class="geeturl fontenglish">(https://www.youtube.com/watch?v=z5YNXOxK5PY)</span>
+      href="https://www.youtube.com/watch?v=lVVTcd9fSR8" target="_blank">
+      <span class="geeturl fontenglish">(https://www.youtube.com/watch?v=lVVTcd9fSR8)</span>
 
       <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
@@ -299,88 +336,97 @@
   </div>
   <div class="table-responsive">
     <div class="column fontkannada">
-      <div>ಧರ್ಮ ಕೆ ಲಿಯೇ ಜಿಯೇ ಸಮಾಜ ಕೆ ಲಿಯೇ ಜಿಯೇ</div>
-      <div>ಯೇ ಧಡಕನೇ ಯೇ ಶ್ವಾಸ ಹೋ ಪುಣ್ಯಭೂಮೀ ಕೆ ಲಿಯೇ </div>
-      <div>ಕರ್ಮಭೂಮೀ ಕೆ ಲಿಯೇ ।।ಧೃ।।</div>
+      <div>ಮನಸಾ ಸತತಂ ಸ್ಮರಣೀಯಂ ವಚಸಾ ಸತತಂ ವದನೀಯಂ।</div>
+      <div>ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ।।ಲೋಕಹಿತಮ್।।</div>
       <div class="smallparasep"></div>
-      <div>ಗರ್ವ ಸೆ ಸಭೀ ಕಹೇ ಹಿಂದು ಹೈ ಹಮ್ ಏಕ ಹೈ</div>
-      <div>ಜಾತಿ ಪಂಥ ಭಿನ್ನತಾ ಸ್ನೇಹ ಸೂತ್ರ ಏಕ ಹೈ</div>
-      <div>ಶುಭ್ರ ರಂಗ ಕೀ ಛಟಾ ಸಪ್ತ ರಂಗ ಹೈ ಲಿಯೇ ।।೧।।</div>
+      <div>ನ ಭೋಗಭವನೇ ರಮಣೀಯಂ ನ ಚ ಸುಖಶಯನೇ ಶಯನೀಯನಂ। </div>
+      <div>ಅಹರ್ನಿಶಂ ಜಾಗರಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ।।ಮನಸಾ ।। </div>
 
       <div class="smallparasep"></div>
 
-      <div>ಕೋಟಿ ಕೋಟಿ ಕಂಠ ಸೆ ಹಿಂದು ಧರ್ಮ ಗರ್ಜನಾ</div>
-      <div>ನಿತ್ಯ ಸಿದ್ಧ ಶಕ್ತಿ ಸೆ ಮಾತೃಭೂ ಕೀ ಅರ್ಚನಾ</div>
-      <div>ಸಂಘ ಶಕ್ತಿ ಕಲಿಯುಗೆ ಸುಧಾ ಹೈ ಧರ್ಮ ಕೆ ಲಿಯೇ ।।೨।।</div>
+      <div>ನ ಜಾತು ದುಃಖಂ ಗಣನೀಯಂ ನ ಚ ನಿಜಸೌಖ್ಯಂ ಮನನೀಯಂ।</div>
+      <div>ಕಾರ್ಯಕ್ಷೇತ್ರೇ ತ್ವರಣೀಯಂ ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ।।ಮನಸಾ ।।</div>
 
       <div class="smallparasep"></div>
-      <div>ವ್ಯಕ್ತಿ ವ್ಯಕ್ತಿ ಮೇ ಜಗೇ ಸಮಾಜ ಭಕ್ತಿ ಭಾವನಾ</div>
-      <div>ವ್ಯಕ್ತಿ ಕೋ ಸಮಾಜ ಸೆ ಜೊಡನೇ ಕೀ ಸಾಧನಾ</div>
-      <div>ದಾವ ಪರ ಸಭೀ ಲಗೇ ಧರ್ಮ ಕಾರ್ಯ ಕೆ ಲಿಯೇ ।।೩।। </div>
+      <div>ದುಃಖಸಾಗರೇ ತರಣೀಯಂ, ಕಷ್ಟಪರ್ವತೇ ಚರಣೀಯಂ।</div>
+      <div>ವಿಪತ್ತಿವಿಪಿನೇ ಭ್ರಮಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ।।ಮನಸಾ ।। </div>
+
       <div class="smallparasep"></div>
-      <div>ಏಕ ದಿವ್ಯ ಜ್ಯೋತಿ ಸೆ ಅಸಂಖ್ಯ ದೀಪ ಜಲ ರಹೇ</div>
-      <div>ಕೌನ ಲೋ ಬುಝಾ ಸಕೆ ಆಂಧಿಯೋ ಮೇ ಜೋ ಜಲೇ</div>
-      <div>ತೇಜಃಪುಂಜ ಹಮ್ ಬಢೇ ತಮಸ ಚೇರತೇ ಹುಯೇ।।೪।।</div>
+      <div>ಗಹನಾರಣ್ಯೇ ಘನಾಂಧಕಾರೇ, ಬಂಧುಜನಾ ಯೇ ಸ್ಥಿತಾ ಗಹ್ವರೇ।</div>
+      <div>ತತ್ರಾ ಮಯಾ ಸಂಚರಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ।।ಮನಸಾ ।।</div>
     </div>
     <div class="column fontdevanagari">
-      <div> धर्म के लिये जिये समाज के लिये जिये</div>
-      <div> ये धडकने ये श्वास हो पुण्यभूमी के लिये </div>
-      <div> कर्मभूमी के लिये।।प।।</div>
+      <div>मनसा सततं स्मरणीयं मनसा सततं स्मरणीयं।</div>
+      <div> लोकहितं मम करणीयम् ।।लोकहितम् ।।</div>
+
       <div class="smallparasep"></div>
-      <div>गर्व से सभी कहे हिन्दु है हम एक है</div>
-      <div>जाति पंथ भिन्नता स्नेह सूत्र एक है</div>
-      <div>शुभ्र रंग की छटा सप्त रंग है लिये।।१।।</div>
+      <div>न भोगभवने रमणीयं न च सुखशयने शयनीयम्।</div>
+      <div>अहर्निशं जागरणीयं लोकहितं मम करणीयम् ।।मनसा ।।</div>
+
       <div class="smallparasep"></div>
-      <div>कोटि कोटि कन्ठ से हिन्दु धर्म गर्जना</div>
-      <div>नित्य सिद्ध शक्ति से मातृभू की अर्चना</div>
-      <div>संघ शक्ति कलियुगे सुधा है धर्म के लिये।।२।।</div>
+      <div>न जातु दुःखं गणनीयं न च निजसौख्यं मननीयम् ।</div>
+      <div>कार्यक्षेत्रे त्वरणीयं लोकहितं मम करणीयम् ।।मनसा ।।</div>
+
       <div class="smallparasep"></div>
-      <div>व्यक्ति व्यक्ति मे जगे समाज भक्ति भावना</div>
-      <div>व्यक्ति को समाज से जोडने की साधना</div>
-      <div>दाव पर सभी लगे धर्म कार्य के लिये ।।३।।</div>
+      <div>दुःखसागरे तरणीयं कष्टपर्वते चरणीयम्।</div>
+      <div>विपत्तिविपिने भ्रमणीयं लोकहितं मम करणीयम् ।।मनसा ।।</div>
+
       <div class="smallparasep"></div>
-      <div>एक दिव्य ज्योति से असंख्य दीप जल रहे
-      </div>
-      <div>कौन लो बुझा सके आंधियो मे जो जले </div>
-      <div> तेजःपुंज हम बढे तमस चेरते हुए।।४।।
-      </div>
+      <div>गहनारण्ये घनान्धकारे बन्धुजना ये स्थिता गह्वरे ।</div>
+      <div> तत्र मया सञ्चरणीयं लोकहितं मम करणीयम् ।।मनसा ।। </div>
     </div>
   </div>
+
+
+
   <div class="sectionheader">
     <span class="fontkannada">ಸುಭಾಷಿತ - </span><span class="fontdevanagari">सुभाषित </span>
+    <audio id="subhashitaAudio" data-playbutton="subhashitaAudioplay" data-pausebutton="subhashitaAudiopause"
+      src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/GSAP/GSAP_Subhashitha_dec_25.mp3"></audio>
+
+    <svg id="subhashitaAudioplay" class="audio-icon audio-play">
+      <use href="#icon-play"></use>
+    </svg>
+
+    <svg id="subhashitaAudiopause" class="audio-icon audio-pause" style="display:none;">
+      <use href="#icon-pause"></use>
+    </svg>
+
   </div>
   <div class="table-responsive">
     <div class="column fontkannada">
 
       <span class="subhashitha">
-        <div>ಷಡ್‌-ದೋಷಾಃ ಪುರುಷೇಣೇಹ, ಹಾತವ್ಯಾ ಭೂತಿಮಿಚ್ಛತಾ।
+        <div>ಕರ್ಮಣೈವ ಹಿ ಸಂಸಿದ್ಧಿಮಾಸ್ಥಿತಾ ಜನಕಾದಯ:।
         </div>
-        <div>ನಿದ್ರಾ ತಂದ್ರಾ ಭಯಂ ಕ್ರೋಧಃ, ಆಲಸ್ಯಂ ದೀರ್ಘಸೂತ್ರತಾ॥</div>
+        <div>ಲೋಕಸಂಗ್ರಹಮೇವಾಪಿ ಸಂಪಶ್ಯನ್ಕರ್ತುಮರ್ಹಸಿ ॥ ೩.೨೦ ॥</div>
       </span>
       <p></p>
       <div>
         <span>ಅರ್ಥ:</span>
-        <span>ಯಾರು ಭೂತಿಃ (ಸಂಪತ್ತು, ಯಶಸ್ಸು, ತೇಜಸ್ಸು ಮತ್ತು ಸಾಧನೆ) ಬಯಸುತ್ತಾನೋ, ಅವನು ಆರು ದೋಷಗಳನ್ನು ತ್ಯಜಿಸಬೇಕು - ನಿದ್ರೆ,
-          ಆಲಸ್ಯದಿಂದ ಉಂಟಾಗುವ ಜಡತೆ (ತಂದ್ರಾ), ಭಯ, ಕ್ರೋಧ, ಕಾರ್ಯವಿಮುಖತೆ (ಆಲಸ್ಯ) ಮತ್ತು ಕೆಲಸ ಮಾಡುವಲ್ಲಿ ಅನಾವಶ್ಯಕ ವಿಳಂಬ
-          (ದೀರ್ಘಸೂತ್ರತೆ).</span>
+        <span>ರಾಜ ಜನಕರಂತಹ ಶ್ರೇಷ್ಠರು ನಿಷ್ಠೆಯಿಂದ ಕರ್ಮಗಳನ್ನು ಮಾಡಿಯೇ ಸಿದ್ಧಿ ಪಡೆದರು. ನಾವು ಕೂಡ ಕೇವಲ ನಮ್ಮ ಮೋಕ್ಷಕ್ಕಾಗಿ
+          ಮಾತ್ರವಲ್ಲದೆ, ನಮ್ಮ ಪ್ರಭಾವದ ಕ್ಷೇತ್ರದಲ್ಲಿ ಸಮಾಜದ ಸ್ಥಿರತೆ ಮತ್ತು ಸ್ಫೂರ್ತಿಗಾಗಿ ಕರ್ಮವನ್ನು ಮಾಡಬೇಕು. ನಾವು ಎಲ್ಲೇ ಇದ್ದರೂ
+          ಧರ್ಮ ಮತ್ತು ಸಮತೋಲನವನ್ನು ಸ್ಥಾಪಿಸುವಲ್ಲಿ ತೊಡಗಿಸಿಕೊಳ್ಳುವುದೇ ಲೋಕಕಲ್ಯಾಣದ ಕಾರ್ಯವಾಗಿದೆ.</span>
       </div>
-      <div> <span style="font-style: italic;">ಆಧಾರ: ಮಹಾಭಾರತ, ಉದ್ಯೋಗ ಪರ್ವ</span></div>
+      <div> <span style="font-style: italic;">ಆಧಾರ: ಶ್ರೀಮದ್ ಭಗವದ್ಗೀತೆ</span></div>
     </div>
     <div class="column fontdevanagari">
       <span class="subhashitha">
-        <div>षड्-दोषाः पुरुषेणेह, हातव्या भूतिम् इच्छता ।
+        <div>कर्मणैव हि संसिद्धिमास्थिता जनकादय:।
         </div>
-        <div>निद्रा तन्द्रा भयं क्रोधः, आलस्यं दीर्घ-सूत्रता॥</div>
+        <div>लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ॥ ३.२० ॥</div>
       </span>
       <p></p>
       <div>
         <span>अर्थ:</span>
         <span>
-          जो भूतिः (संपदा, यश, तेज और सिद्धि) का आकांक्षी है, उसे छह दोषों का त्याग करना चाहिए - निद्रा, आलस्यजनित जड़ता
-          (तन्द्रा), भय, क्रोध, कृत्यविमुखता (आलस्य) और कार्य करने में अनावश्यक विलंब (दीर्घसूत्रता)।
+          राजा जनक जैसे श्रेष्ठों ने कर्म द्वारा सिद्धि प्राप्त की।
+          हमें भी केवल निज मोक्ष हेतु नहीं, अपितु अपने प्रभावक्षेत्र में समाज की स्थिरता और प्रेरणा हेतु कर्म करना
+          चाहिए। जहाँ हम हैं, वहाँ धर्म और संतुलन की स्थापना के लिए संलग्न होना ही लोकसंग्रह है।
+
         </span>
       </div>
-      <div><span style="font-style: italic;"> आधार: महाभारत, उद्योग पर्व</span></div>
+      <div><span style="font-style: italic;"> आधार: श्रीमद् भगवद्गीता</span></div>
     </div>
   </div>
 
@@ -400,54 +446,55 @@
       <div class="panchanga-content">
         <div class="pancchang-row">
           <div class="panchang-text">
-            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಶರದ್ ಋತು, ಆಶ್ವಯುಜ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ತ್ರಯೋದಶಿ ತಿಥಿ, ಶತಭಿಷಾ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, शरद् ऋतु, आश्वयुज मास, शुक्ल पक्ष, त्रयोदशी तिथि, शतभिषा नक्षत्र
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ತ್ರಿತೀಯಾ ತಿಥಿ, ಪುನರ್ವಸು ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त  ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, तृतीया तिथि, पुनर्वसु नक्षत्र
             </div>
           </div>
-          <div class="panchang-date fontenglish">05-October-2025</div>
+          <div class="panchang-date fontenglish">07-December-2025</div>
         </div>
         <div class="pancchang-row">
           <div class="panchang-text">
-            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಶರದ್ ಋತು, ಆಶ್ವಯುಜ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಷಷ್ಠೀ ತಿಥಿ, ಮೃಗಶಿರಾ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, शरद् ऋतु, आश्वयुज मास, कृष्ण पक्ष, षष्ठी तिथि, मृगशिरा नक्षत्र
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ದಶಮಿ ತಿಥಿ, ಹಸ್ತ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, दशमी तिथि, हस्त  नक्षत्र
             </div>
           </div>
-          <div class="panchang-date fontenglish">12-October-2025</div>
+          <div class="panchang-date fontenglish">14-December-2025</div>
         </div>
         <div class="pancchang-row ">
           <div class="panchang-text">
-            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಶರದ್ ಋತು, ಆಶ್ವಯುಜ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ತ್ರಯೋದಶೀ ತಿಥಿ, ಉತ್ತರಾ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, शरद् ऋतु, आश्वयुज मास, कृष्ण पक्ष, त्रयोदशी तिथि, उत्तरफाल्गुनी नक्षत्र</div>
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಪಾಡ್ಯ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, प्रतिपदा तिथि, पूर्वाषाढ़ा  नक्षत्र</div>
           </div>
-          <div class="panchang-date fontenglish ">19-October-2025</div>
+          <div class="panchang-date fontenglish ">21-December-2025</div>
         </div>
         <div class="pancchang-row ">
           <div class="panchang-text">
-            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಶರದ್ ಋತು, ಕಾರ್ತಿಕ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಪಂಚಮಿ ತಿಥಿ, ಜ್ಯೇಷ್ಠಾ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, शरद् ऋतु, कार्तिक मास, शुक्ल पक्ष, पञ्चमी तिथि, ज्येष्ठा  नक्षत्र</div>
-             </div>
-            <div class="panchang-date fontenglish">26-October-2025</div>
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಉತ್ತರಾಭಾದ್ರಪದ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, अष्टमी तिथि, उत्तरभाद्रपद नक्षत्र
+            </div>
           </div>
-
-
+          <div class="panchang-date fontenglish">28-December-2025</div>
         </div>
-      </div>
-      <div class="column-visheshadina">
 
       </div>
     </div>
-    <div class="separator-thin"></div>
-    <div class="heder-container">
-      <div class="left-header"><span class="fontenglish"></span><span class="fontkannada">ಐ. ಟಿ. ಕಾರ್ಯ, ಬೆಂಗಳೂರು ದಕ್ಷಿಣ
-          ವಿಭಾಗ
-        </span> </div>
-      <div class="left-header"><span class="fontkannada">ಆಶ್ವಯುಜ,ಕಾರ್ತಿಕ</span>/ <span class="fontdevanagari">
-          भाद्रपद,आश्वयुज </span> <span class="fontenglish">5127(October 2025)</span></div>
-      <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
-          दक्षिणा
-          विभाग</span>
-      </div>
+    <div class="column-visheshadina">
+
     </div>
+  </div>
+  <div class="separator-thin"></div>
+  <div class="heder-container">
+    <div class="left-header"><span class="fontenglish"></span><span class="fontkannada">ಐ. ಟಿ. ಕಾರ್ಯ, ಬೆಂಗಳೂರು ದಕ್ಷಿಣ
+        ವಿಭಾಗ
+      </span> </div>
+    <div class="left-header"><span class="fontkannada">ಮಾರ್ಗಶಿರ,ಪುಷ್ಯ</span>/ <span class="fontdevanagari">
+        मार्गशीर्ष,पौष  </span> <span class="fontenglish">5127(December 2025)</span></div>
+    <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
+        दक्षिणा
+        विभाग</span>
+    </div>
+  </div>
 </body>
 <script type="text/javascript">
   // ...existing code...
@@ -492,5 +539,53 @@
     });
   })();
 </script>
+
+
+<script>
+  // Get all audio elements on the page
+  const audioElements = document.querySelectorAll("audio[data-playbutton][data-pausebutton]");
+
+  function stopAllExcept(current) {
+    audioElements.forEach(aud => {
+      if (aud !== current) {
+        aud.pause();
+        aud.currentTime = 0;
+
+        // Reset icons
+        const playBtn = document.getElementById(aud.dataset.playbutton);
+        const pauseBtn = document.getElementById(aud.dataset.pausebutton);
+        playBtn.style.display = "inline";
+        pauseBtn.style.display = "none";
+      }
+    });
+  }
+
+  audioElements.forEach(audio => {
+    const playBtn = document.getElementById(audio.dataset.playbutton);
+    const pauseBtn = document.getElementById(audio.dataset.pausebutton);
+
+    // Play button click
+    playBtn.addEventListener("click", () => {
+      stopAllExcept(audio);
+      audio.play();
+      playBtn.style.display = "none";
+      pauseBtn.style.display = "inline";
+    });
+
+    // Pause button click
+    pauseBtn.addEventListener("click", () => {
+      audio.pause();
+      playBtn.style.display = "inline";
+      pauseBtn.style.display = "none";
+    });
+
+    // When audio ends → reset icons
+    audio.addEventListener("ended", () => {
+      playBtn.style.display = "inline";
+      pauseBtn.style.display = "none";
+    });
+  });
+</script>
+
 
 </html>

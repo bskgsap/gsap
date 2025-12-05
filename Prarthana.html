@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Kannada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <title>Sangha Prarthana</title>
+    <style>
+        body {
+            margin: 13px 10px 12px 10px;
+            font-family: 'Noto Serif Kannada', 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 0.9em;
+        }
+
+        #prarthanatext {
+            color: rgb(0, 0, 49);
+        }
+
+        #prarthanatext p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        #prarthanatext .red-arrow {
+            color: red;
+            padding: 12px;
+        }
+
+        #prarthanatext .mahaprana {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="readandfollow">
+        <source src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/Prarthana%20Read%20and%20Follow.mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="practiceasprarthanapramukh">
+        <source src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/Prarthana%20eak%20do%20theen.mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="fullprarthana">
+        <source src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/Prathana.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+  <button id="fullprarthanapramukhplaybtn">▶ ಪೂರ್ಣ ಪ್ರಾರ್ಥನೆ ಕೇಳಲು </button><div></div>
+    <button id="readandfollowplaybtn">▶ ಅನುಸರಿಸಿ ಅಭ್ಯಾಸ ಮಾಡಲು </button>
+    <div></div>
+    <button id="practiceasprarthanapramukhplaybtn">▶ ಪ್ರಾರ್ಥನೆ ಅಭ್ಯಾಸ ಆದ ಮೇಲೆ ಪ್ರಾರ್ಥನಾ ಪ್ರಮುಖ್ ಆಗಿ ಅಭ್ಯಾಸ ಮಾಡಲು </button>
+    
+  
+
+    <script>
+        const audios = [
+            { audio: document.getElementById("readandfollow"), btn: document.getElementById("readandfollowplaybtn"), text: "ಅನುಸರಿಸಿ ಅಭ್ಯಾಸ ಮಾಡಲು" },
+            { audio: document.getElementById("practiceasprarthanapramukh"), btn: document.getElementById("practiceasprarthanapramukhplaybtn"), text: "ಪ್ರಾರ್ಥನೆ ಅಭ್ಯಾಸ ಆದ ಮೇಲೆ ಪ್ರಾರ್ಥನಾ ಪ್ರಮುಖ್ ಆಗಿ ಅಭ್ಯಾಸ ಮಾಡಲು" },
+            { audio: document.getElementById("fullprarthana"), btn: document.getElementById("fullprarthanapramukhplaybtn"), text: "ಪೂರ್ಣ ಪ್ರಾರ್ಥನೆ ಕೇಳಲು" }
+        ];
+
+        function stopAllExcept(currentAudio) {
+            audios.forEach(item => {
+                if (item.audio !== currentAudio) {
+                    item.audio.pause();
+                    item.audio.currentTime = 0;
+                    item.btn.textContent = "▶ " + item.text;
+                }
+            });
+        }
+
+        audios.forEach(item => {
+            item.btn.onclick = function () {
+                if (item.audio.paused) {
+                    stopAllExcept(item.audio);
+                    item.audio.play();
+                    item.btn.textContent = "⏸ " + item.text;
+                } else {
+                    item.audio.pause();
+                    item.btn.textContent = "▶ " + item.text;
+                }
+            };
+
+            item.audio.onended = function () {
+                item.btn.textContent = "▶ " + item.text;
+            };
+        });
+    </script>
+    <div id="prarthanatext">
+        <br />
+        <p><strong>ಪ್ರಾರ್ಥನೆ ( ಸಂಧಿ ನಿಯಮಾನುಸಾರ ಉಚ್ಛಾರಣೆಯ ದೃಷ್ಟಿಯಿಂದ) </strong></p>
+
+        <p>ನಮಸ್ತೇ ಸದಾ ವತ್ಸಲೇ ಮಾತೃ<span class="mahaprana">ಭೂ</span>ಮೇ । <span class="red-arrow">↑</span></p>
+        <p>ತ್ವಯಾ ಹಿಂದು<span class="mahaprana">ಭೂ</span>ಮೇ ಸುಖಂವ್ ವ<span class="mahaprana">ರ್ಧಿ</span>ತೋಽಹಮ್ ॥ <span
+                class="red-arrow">→</span></p>
+        <p>ಮಹಾಮಂಗಲೇ ಪುಣ್ಯ<span class="mahaprana">ಭೂ</span>ಮೇ ತ್ವದರ್ಥೇ। <span class="red-arrow">↓</span></p>
+        <p>ಪತತ್ವೇಷ ಕಾಯೋ ನಮಸ್ತೇ ನಮಸ್ತೇ ॥೧॥ <span class="red-arrow">→</span></p>
+        <br>
+        <p>ಪ್ರ<span class="mahaprana">ಭೋ</span> ಶಕ್ತಿಮನ್‌ ಹಿಂದುರಾಷ್ಟ್ರಾಂಗ<span class="mahaprana">ಭೂ</span>ತಾ <span
+                class="red-arrow">↑</span></p>
+        <p>ಇಮೇ ಸಾದರನ್ ತ್ವಾನ್ನಮಾಮೋ ವಯಮ್। <span class="red-arrow">→</span></p>
+        <p>ತ್ವದೀಯಾಯ ಕಾರ್ಯಾಯ ಬದ್ಧಾ ಕಟೀಯಮ್<span class="red-arrow">↓</span></p>
+        <p>ಶು<span class="mahaprana">ಭಾ</span>ಮಾಶಿಷನ್ ದೇಹಿ ತತ್ಪೂರ್ತಯೇ॥ <span class="red-arrow">→</span></p>
+        <p>ಅಜಯ್ಯಾಞ್ ಚ ವಿಶ್ವಸ್ಯ ದೇಹೀಶ ಶಕ್ತಿಮ್<span class="red-arrow">↑</span></p>
+        <p>ಸುಶೀಲಞ್ ಜಗದ್ಯೇನ ನಮ್ರಮ್ <span class="mahaprana">ಭ</span>ವೇತ್। <span class="red-arrow">→</span></p>
+        <p>ಶ್ರುತಞ್ ಚೈವ ಯತ್ಕಂಟಕಾಕೀರ್ಣಮಾರ್ಗಮ್ <span class="red-arrow">↓</span></p>
+        <p>ಸ್ವಯಂ ಸ್ವೀಕೃತನ್ನತ್ಸುಗಙ್ ಕಾರಯೇತ್ ॥೨॥ <span class="red-arrow">→</span></p>
+        <br>
+        <p>ಸಮುತ್ಕರ್ಷನಿಃಶ್ರೇಯಸಸ್ಯೈಕಮುಗ್ರಮ್ <span class="red-arrow">↑</span></p>
+        <p>ಪರಂ ಸಾಧನನ್ನಾಮ ವೀರವ್ರತಮ್।<span class="red-arrow">→</span></p>
+        <p>ತದನ್ತಸ್ ಸ್ಫುರತ್ವಕ್ಷಯಾ <span class="mahaprana">ಧ್ಯೇ</span>ಯನಿಷ್ಠಾ<span class="red-arrow">↓</span></p>
+        <p>ಹೃದನ್ತಃ ಪ್ರಜಾಗರ್ತು ತೀವ್ರಾಽನಿಶಮ್‌ ॥ <span class="red-arrow">→</span></p>
+        <p>ವಿಜೇತ್ರೀ ಚ ನಸ್ಸಂಹತಾ ಕಾರ್ಯಶಕ್ತಿರ್<span class="red-arrow">↑</span></p>
+        <p>ವಿ<span class="mahaprana">ಧಾ</span>ಯಾಸ್ಯ <span class="mahaprana">ಧ</span>ರ್ಮಸ್ಯ ಸಂರಕ್ಷಣಮ್‌ ।<span
+                class="red-arrow">→</span></p>
+        <p>ಪರಂವ್ ವೈ<span class="mahaprana">ಭ</span>ವನ್ನೇತುಮೇತತ್‌ ಸ್ವರಾಷ್ಟ್ರಮ್<span class="red-arrow">↑</span></p>
+        <p>ಸಮರ್ಥಾ <span class="mahaprana">ಭ</span>ವತ್ವಾಶಿಷಾ ತೇ <span class="mahaprana">ಭೃ</span>ಶಮ್ ॥೩॥ <span class="red-arrow">→</span></p>
+        <br>
+        <p> ಭಾರತ ಮಾತಾ ಕೀ ಜಯ್‍ ॥ </p>
+    </div>
+    <br />
+     
+    <div id="prarthanatext">
+        <br />
+        <p><strong>ಪ್ರಾರ್ಥನೆ</strong></p>
+
+        <p>ನಮಸ್ತೇ ಸದಾ ವತ್ಸಲೇ ಮಾತೃ<span class="mahaprana">ಭೂ</span>ಮೇ। <span class="red-arrow">↑</span></p>
+        <p>ತ್ವಯಾ ಹಿಂದು<span class="mahaprana">ಭೂ</span>ಮೇ ಸುಖಂ ವ<span class="mahaprana"></span>ರ್ಧಿತೋಹಮ್ ॥<span class="red-arrow">→</span></p>
+        <p>ಮಹಾಮಂಗಲೇ ಪುಣ್ಯ<span class="mahaprana">ಭೂ</span>ಮೇ ತ್ವದ<span class="mahaprana">ರ್ಥೇ</span> ।<span class="red-arrow">↓</span></p>
+        <p>ಪತತ್ವೇಷ ಕಾಯೋ ನಮಸ್ತೇ ನಮಸ್ತೇ ॥೧॥ <span class="red-arrow">→</span></p>
+        <br>
+        <p>ಪ್ರ<span class="mahaprana"></span>ಭೋ ಶಕ್ತಿಮನ್‌ ಹಿಂದುರಾಷ್ಟ್ರಾಂಗ<span class="mahaprana">ಭೂ</span>ತಾ <span class="red-arrow">↑</span></p>
+        <p>ಇಮೇ ಸಾದರಂ ತ್ವಾಂ ನಮಾಮೋ ವಯಮ್। <span class="red-arrow">→</span></p>
+        <p>ತ್ವದೀಯಾಯ ಕಾರ್ಯಾಯ ಬ<span class="mahaprana">ದ್ಧಾ</span> ಕಟೀಯಮ್ <span class="red-arrow">↓</span></p>
+        <p>ಶು<span class="mahaprana">ಭಾ</span>ಮಾಶಿಷಂ ದೇಹಿ ತತ್‍ಪೂರ್ತಯೇ ॥<span class="red-arrow">→</span></p>
+        <p>ಅಜಯ್ಯಾಂ ಚ ವಿಶ್ವಸ್ಯ ದೇಹೀಽಶ ಶಕ್ತಿಂ <span class="red-arrow">↑</span></p>
+        <p>ಸುಶೀಲಂ ಜಗದ್ಯೇನ ನಮ್ರಂ <span class="mahaprana">ಭ</span>ವೇತ್ ।<span class="red-arrow">→</span></p>
+
+        <p>ಶ್ರುತಂ ಚೈವ ಯತ್‍ ಕಂಟಕಾಕೀರ್ಣಮಾರ್ಗಮ್ <span class="red-arrow">↓</span></p>
+        <p>ಸ್ವಯಂ ಸ್ವೀಕೃತಂ ನಃ ಸುಗಂ ಕಾರಯೇತ್ ॥೨॥<span class="red-arrow">→</span></p>
+        <br>
+        <p>ಸಮುತ್ಕರ್ಷನಿಃಶ್ರೇಯಸಸ್ಯೈಕಮುಗ್ರಂ <span class="red-arrow">↑</span></p>
+        <p>ಪರಂ ಸಾಧನಂ ನಾಮ ವೀರವ್ರತಮ್ ।<span class="red-arrow">→</span></p>
+        <p>ತದಂತಃ ಸ್ಫುರತ್ವಕ್ಷಯಾ <span class="mahaprana">ಧ್ಯೇ</span>ಯನಿಷ್ಠಾ <span class="red-arrow">↓</span></p>
+        <p>ಹೃದತಃ ಪ್ರಜಾಗರ್ತು ತೀವ್ರಾನಿಶಮ್‌ ॥<span class="red-arrow">→</span></p>
+        <p>ವಿಜೇತ್ರೀ ಚ ನಃ ಸಂಹತಾ ಕಾರ್ಯಶಕ್ತಿರ್ <span class="red-arrow">↑</span></p>
+        <p>ವಿ<span class="mahaprana">ಧಾ</span>ಯಾಸ್ಯ <span class="mahaprana">ಧ</span>ರ್ಮಸ್ಯ ಸಂರಕ್ಷಣಮ್‌ ।<span class="red-arrow">→</span></p>
+        <p>ಪರಂ ವೈ<span class="mahaprana">ಭ</span>ವಂ ನೇ ತುಮೇತತ್‌ ಸ್ವರಾಷ್ಟ್ರಮ್ <span class="red-arrow">↑</span></p>
+        <p>ಸಮರ್ಥಾ <span class="mahaprana">ಭ</span>ವತ್ವಾಶಿಶಾ ತೇ <span class="mahaprana">ಭೃ</span>ಶಮ್ ॥೩॥<span class="red-arrow">→</span></p>
+        <br>
+        <p>ಭಾರತ ಮಾತಾ ಕೀ ಜಯ್</p>
+    </div>
+
+
+
+</body>
+
+</html>
