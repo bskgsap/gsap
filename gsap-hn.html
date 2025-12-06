@@ -12,6 +12,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="https://www.rss.org//images/ico_2205.ico">
   <style>
+    @page {
+      size: A4;
+      margin: 1mm 1mm 1mm 1mm;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      #footerseperator {
+        display: none;
+      }
+
+      #footer {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        border-top: 1px solid #000;
+      }
+    }
+
+
     body {
       margin: 3px 10px 2px 10px;
       font-family: 'Noto Serif';
@@ -86,12 +111,20 @@
       margin-top: 2px;
     }
 
+        .ekatmata-para {
+      margin-top: 8px;
+    }
+
     .simple-para p {
       margin: 0px;
     }
 
     .right-aligned {
       text-align: right;
+    }
+
+    #ekatmatastotra {
+      display: none;
     }
 
     @media (max-width: 600px) {
@@ -266,7 +299,9 @@
         height: 36px;
       }
 
-
+      #ekatmatastotra {
+        display: inline;
+      }
 
     }
   </style>
@@ -448,7 +483,7 @@
           <div class="panchang-text">
             <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ತ್ರಿತೀಯಾ ತಿಥಿ, ಪುನರ್ವಸು ನಕ್ಷತ್ರ
             </div>
-            <div class="fontdevanagari">दक्षिणायन, हेमन्त  ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, तृतीया तिथि, पुनर्वसु नक्षत्र
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, तृतीया तिथि, पुनर्वसु नक्षत्र
             </div>
           </div>
           <div class="panchang-date fontenglish">07-December-2025</div>
@@ -456,7 +491,7 @@
         <div class="pancchang-row">
           <div class="panchang-text">
             <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ದಶಮಿ ತಿಥಿ, ಹಸ್ತ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, दशमी तिथि, हस्त  नक्षत्र
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, दशमी तिथि, हस्त नक्षत्र
             </div>
           </div>
           <div class="panchang-date fontenglish">14-December-2025</div>
@@ -464,13 +499,15 @@
         <div class="pancchang-row ">
           <div class="panchang-text">
             <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಪಾಡ್ಯ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ</div>
-            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, प्रतिपदा तिथि, पूर्वाषाढ़ा  नक्षत्र</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, प्रतिपदा तिथि, पूर्वाषाढ़ा नक्षत्र
+            </div>
           </div>
           <div class="panchang-date fontenglish ">21-December-2025</div>
         </div>
         <div class="pancchang-row ">
           <div class="panchang-text">
-            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಉತ್ತರಾಭಾದ್ರಪದ ನಕ್ಷತ್ರ</div>
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಉತ್ತರಾಭಾದ್ರಪದ ನಕ್ಷತ್ರ
+            </div>
             <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, अष्टमी तिथि, उत्तरभाद्रपद नक्षत्र
             </div>
           </div>
@@ -483,13 +520,191 @@
 
     </div>
   </div>
-  <div class="separator-thin"></div>
-  <div class="heder-container">
+  <div id="ekatmatastotra">
+    <div class="sectionheader">
+      <span class="fontkannada">ಏಕಾತ್ಮತಾ ಸ್ತ್ರೋತ್ರ - </span><span class="fontdevanagari">एकात्मता स्तोत्र </span>
+    </div>
+    <div class="ekatmata-para fontkannada ">
+      <div>ಓಂ ಸಚ್ಚಿದಾನಂದ ರೂಪಾಯ ನಮೋಽಸ್ತು ಪರಮಾತ್ಮನೇ ।</div>
+      <div>ಜ್ಯೋತಿರ್ಮಯ ಸ್ವರೂಪಾಯ ವಿಶ್ವಮಾಂಗಲ್ಯ ಮೂರ್ತಯೇ ॥1॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಪ್ರಕೃತಿಃ ಪಂಚಭೂತಾನಿ ಗ್ರಹ ಲೋಕ ಸ್ವರಾಸ್ತಥಾ ।</div>
+      <div>ದಿಶಃ ಕಾಲಶ್ಚ ಸರ್ವೇಷಾಂ ಸದಾ ಕುರ್ವಂತು ಮಂಗಲಂ॥2॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರತ್ನಾಕರಾ ಧೌತಪದಾಂ ಹಿಮಾಲಯ ಕಿರೀಟಿನೀಂ ।</div>
+      <div>ಬ್ರಹ್ಮರಾಜರ್ಷಿರತ್ನಾಢ್ಯಾಂ ವಂದೇ ಭಾರತಮಾತರಂ ॥3॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಮಹೇಂದ್ರೋ ಮಲಯಃ ಸಹ್ಯೋ ದೇವತಾತ್ಮಾ ಹಿಮಾಲಯಃ ।</div>
+      <div>ಧ್ಯೇಯೋ ರೈವತಕೋ ವಿಂಧ್ಯೋ ಗಿರಿಶ್ಚಾರಾವಲಿಸ್ತಥಾ ॥4॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಗಂಗಾ ಸರಸ್ವತೀ ಸಿಂಧರ್ ಬ್ರಹ್ಮಪುತ್ರಶ್ಚ ಗಂಡಕೀ ।</div>
+      <div>ಕಾವೇರೀ ಯಮುನಾ ರೇವಾ ಕೃಷ್ಣಾ ಗೋದಾ ಮಹಾನದೀ ॥5॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅಯೋಧ್ಯಾ ಮಥುರಾ ಮಾಯಾ ಕಾಶೀ ಕಾಂಚ ಅವಂತಿಕಾ ।</div>
+      <div>ವೈಶಾಲೀ ದ್ವಾರಿಕಾ ಧ್ಯೇಯಾ ಪುರೀ ತಕ್ಷಶಲಾ ಗಯಾ ॥6॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಪ್ರಯಾಗಃ ಪಾಟಲೀಪುತ್ರಂ ವಿಜಯಾನಗರಂ ಮಹತ್ ।</div>
+      <div>ಇಂದ್ರಪ್ರಸ್ಥಂ ಸೋಮನಾಥಸ್ತಥಾಽಮೃತಸರಃ ಪ್ರಿಯಂ॥7॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಚತುರ್ವೇದಾಃ ಪುರಾಣಾನಿ ಸರ್ವೋಪನಿಷದಸ್ತಥಾ ।</div>
+      <div>ರಾಮಾಯಣಂ ಭಾರತಂ ಚ ಗೀತಾ ಸದ್ದರ್ಶನಾನಿ ಚ ॥8॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಜೈನಾಗಮಾಸ್ತ್ರಿಪಿಟಕಾ ಗುರುಗ್ರಂಥಃ ಸತಾಂ ಗಿರಃ ।</div>
+      <div>ಏಷ ಜ್ಞಾನನಿಧಿಃ ಶ್ರೇಷ್ಠಃ ಶ್ರದ್ಧೇಯೋ ಹೃದಿ ಸರ್ವದಾ॥9॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅರುಂಧತ್ಯನಸೂಯ ಚ ಸಾವಿತ್ರೀ ಜಾನಕೀ ಸತೀ ।</div>
+      <div>ದ್ರೌಪದೀ ಕಣ್ಣಗೀ ಗಾರ್ಗೀ ಮೀರಾ ದುರ್ಗಾವತೀ ತಥಾ ॥10॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಲಕ್ಷ್ಮೀರಹಲ್ಯಾ ಚನ್ನಮ್ಮಾ ರುದ್ರಮಾಂಬಾ ಸುವಿಕ್ರಮಾ ।</div>
+      <div>ನಿವೇದಿತಾ ಸಾರದಾ ಚ ಪ್ರಣಮ್ಯ ಮಾತೃ ದೇವತಾಃ ॥11॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಶ್ರೀ ರಾಮೋ ಭರತಃ ಕೃಷ್ಣೋ ಭೀಷ್ಮೋ ಧರ್ಮಸ್ತಥಾರ್ಜುನಃ ।</div>
+      <div>ಮಾರ್ಕಂಡೇಯೋ ಹರಿಶ್ಚಂದ್ರ ಪ್ರಹ್ಲಾದೋ ನಾರದೋ ಧ್ರುವಃ ॥12॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಹನುಮಾನ್ ಜನಕೋ ವ್ಯಾಸೋ ವಸಿಷ್ಠಶ್ಚ ಶುಕೋ ಬಲಿಃ ।</div>
+      <div>ದಧೀಚಿ ವಿಶ್ವಕರ್ಮಾಣೌ ಪೃಥು ವಾಲ್ಮೀಕಿ ಭಾರ್ಗವಃ ॥13॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಭಗೀರಥಶ್ಚೈಕಲವ್ಯೋ ಮನುರ್ಧನ್ವಂತರಿಸ್ತಥಾ ।</div>
+      <div>ಶಿಬಿಶ್ಚ ರಂತಿದೇವಶ್ಚ ಪುರಾಣೋದ್ಗೀತಕೀರ್ತಯಃ ॥14॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಬುದ್ಧ ಜಿನೇಂದ್ರ ಗೋರಕ್ಷಃ ಪಾಣಿನಿಶ್ಚ ಪತಂಜಲಿಃ ।</div>
+      <div>ಶಂಕರೋ ಮಧ್ವ ನಿಂಬಾರ್ಕೌ ಶ್ರೀ ರಾಮಾನುಜ ವಲ್ಲಭೌ ॥15॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಝೂಲೇಲಾಲೋಽಥ ಚೈತನ್ಯಃ ತಿರುವಲ್ಲುವರಸ್ತಥಾ ।</div>
+      <div>ನಾಯನ್ಮಾರಾಲವಾರಾಶ್ಚ ಕಂಬಶ್ಚ ಬಸವೇಶ್ವರಃ ॥16॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ದೇವಲೋ ರವಿದಾಸಶ್ಚ ಕಬೀರೋ ಗುರು ನಾನಕಃ ।</div>
+      <div>ನರಸೀಸ್ತುಲಸೀದಾಸೋ ದಶಮೇಷೋ ದೃಢವ್ರತಃ ॥17॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಶ್ರೀಮದ್ ಶಂಕರದೇವಶ್ಚ ಬಂಧೂ ಸಾಯಣಮಾಧವೌ ।</div>
+      <div>ಜ್ಞಾನೇಶ್ವರಸ್ತುಕಾರಾಮೋ ರಾಮದಾಸಃ ಪುರಂದರಃ ॥18॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಬಿರಸಾ ಸಹಜಾನಂದೋ ರಮಾನಂದಸ್ತಥಾ ಮಹಾನ್ ।</div>
+      <div>ವಿತರಂತು ಸದೈವೈತೇ ದೈವೀಂ ಸದ್ಗುಣಸಂಪದಂ ॥19॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಭರತರ್ಷಿಃ ಕಾಲಿದಾಸಃ ಶ್ರೀಭೋಜೋ ಜನಕಸ್ತಥಾ ।</div>
+      <div>ಸೂರದಾಸಸ್ತ್ಯಾಗರಾಜೋ ರಸಖಾನಶ್ಚ ಸತ್ಕವಿಃ ॥20॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರವಿವರ್ಮಾ ಭಾತಖಂಡೇ ಭಾಗ್ಯಚಂದ್ರಃ ಸ ಭೂಪತಿಃ ।</div>
+      <div>ಕಲಾವಂತಶ್ಚ ವಿಖ್ಯಾತಾಃ ಸ್ಮರಣೀಯಾ ನಿರಂತರಂ ॥21॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅಗಸ್ತ್ಯಃ ಕಂಬು ಕೌಂಡಿನ್ಯೌ ರಾಜೇಂದ್ರಶ್ಚೋಲವಂಶಜಃ ।</div>
+      <div>ಅಶೋಕಃ ಪುಶ್ಯ ಮಿತ್ರಶ್ಚ ಖಾರವೇಲಃ ಸುನೀತಿಮಾನ್ ॥22॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಚಾಣಕ್ಯ ಚಂದ್ರಗುಪ್ತೌ ಚ ವಿಕ್ರಮಃ ಶಾಲಿವಾಹನಃ ।</div>
+      <div>ಸಮುದ್ರಗುಪ್ತಃ ಶ್ರೀಹರ್ಷಃ ಶೈಲೇಂದ್ರೋ ಬಪ್ಪರಾವಲಃ ॥23॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಲಾಚಿದ್ ಭಾಸ್ಕರ ವರ್ಮಾ ಚ ಯಶೋಧರ್ಮಾ ಚ ಹೂಣಜಿತ್ ।</div>
+      <div>ಶ್ರೀಕೃಷ್ಣದೇವರಾಯಶ್ಚ ಲಲಿತಾದಿತ್ಯ ಉದ್ಬಲಃ ॥24॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಮುಸುನೂರಿನಾಯಕೌ ತೌ ಪ್ರತಾಪಃ ಶಿವ ಭೂಪತಿಃ ।</div>
+      <div>ರಣಜಿತಸಿಂಹ ಇತ್ಯೇತೇ ವೀರಾ ವಿಖ್ಯಾತ ವಿಕ್ರಮಾಃ ॥25॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ವೈಜ್ಞಾನಿಕಾಶ್ಚ ಕಪಿಲಃ ಕಣಾದಃ ಶುಶ್ರುತಸ್ತಥಾ ।</div>
+      <div>ಚರಕೋ ಭಾಸ್ಕರಾಚಾರ್ಯೋ ವರಾಹಮಿಹಿರ ಸುಧೀಃ ॥26॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ನಾಗಾರ್ಜುನೋ ಭರದ್ವಾಜ ಆರ್ಯಭಟ್ಟೋ ಬಸುರ್ಬುಧಃ ।</div>
+      <div>ಧ್ಯೇಯೋ ವೆಂಕಟರಾಮಶ್ಚ ವಿಜ್ಞಾ ರಾಮಾನುಜಾದಯಃ ॥27॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರಾಮಕೃಷ್ಣೋ ದಯಾನಂದೋ ರವೀಂದ್ರೋ ರಾಮಮೋಹನಃ ।</div>
+      <div>ರಾಮತೀರ್ಥೋಽರವಿಂದಶ್ಚ ವಿವೇಕಾನಂದ ಉದ್ಯಶಃ ॥28॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ದಾದಾ ಭಾಯಿ ಗೋಪಬಂಧುಃ ತಿಲಕೋ ಗಾಂಧಿರಾದೃತಾಃ ।</div>
+      <div>ರಮಣೋ ಮಾಲವೀಯಶ್ಚ ಶ್ರೀ ಸುಬ್ರಮಣ್ಯಭಾರತೀ ॥29॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸುಭಾಷಃ ಪ್ರಣವಾನಂದಃ ಕ್ರಾಂತಿವೀರೋ ವಿನಾಯಕಃ ।</div>
+      <div>ಠಕ್ಕರೋ ಭೀಮರಾವಶ್ಚ ಫುಲೇ ನಾರಾಯಣೋ ಗುರುಃ ॥30॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸಂಘಶಕ್ತಿ ಪ್ರಣೇತಾರೌ ಕೇಶವೋ ಮಾಧವಸ್ತಥಾ ।</div>
+      <div>ಸ್ಮರಣೀಯಾಃ ಸದೈವೈತೇ ನವಚೈತನ್ಯದಾಯಕಾಃ ॥31॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅನುಕ್ತಾ ಯೇ ಭಕ್ತಾಃ ಪ್ರಭುಚರಣ ಸಂಸಕ್ತಹೃದಯಾಃ ।</div>
+      <div>ಅನಿರ್ದಿಷ್ಟಾ ವೀರಾ ಅಧಿಸಮರಮುದ್ಧ್ವಸ್ತರಿಪವಃ</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸಮಾಜೋದ್ಧರ್ತಾರಃ ಸುಹಿತಕರ ವಿಜ್ಞಾನ ನಿಪುಣಾಃ ।</div>
+      <div>ನಮಸ್ತೇಭ್ಯೋ ಭೂಯಾತ್ ಸಕಲ ಸುಜನೇಭ್ಯಃ ಪ್ರತಿದಿನಂ ॥32॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಇದಮೇಕಾತ್ಮತಾ ಸ್ತೋತ್ರಂ ಶ್ರದ್ಧಯಾ ಯಃ ಸದಾ ಪಠೇತ್ ।</div>
+      <div>ಸ ರಾಷ್ಟ್ರಧರ್ಮನಿಷ್ಠಾವಾನ್ ಅಖಂಡಂ ಭಾರತಂ ಸ್ಮರೇತ್ ॥33॥</div>
+    </div>
+    <div class="ekatmata-para fontkannada ">
+     
+      <div>ಭಾರತ ಮಾತಾ ಕೀ ಜಯ್</div>
+    </div>
+  </div>
+  <div id="footerseperator" class="separator-thin"></div>
+  <div id="footer" class="heder-container">
     <div class="left-header"><span class="fontenglish"></span><span class="fontkannada">ಐ. ಟಿ. ಕಾರ್ಯ, ಬೆಂಗಳೂರು ದಕ್ಷಿಣ
         ವಿಭಾಗ
       </span> </div>
     <div class="left-header"><span class="fontkannada">ಮಾರ್ಗಶಿರ,ಪುಷ್ಯ</span>/ <span class="fontdevanagari">
-        मार्गशीर्ष,पौष  </span> <span class="fontenglish">5127(December 2025)</span></div>
+        मार्गशीर्ष,पौष </span> <span class="fontenglish">5127(December 2025)</span></div>
     <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
         दक्षिणा
         विभाग</span>
