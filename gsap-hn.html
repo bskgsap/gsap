@@ -111,7 +111,7 @@
       margin-top: 2px;
     }
 
-        .ekatmata-para {
+    .ekatmata-para {
       margin-top: 8px;
     }
 
@@ -513,7 +513,6 @@
           </div>
           <div class="panchang-date fontenglish">28-December-2025</div>
         </div>
-
       </div>
     </div>
     <div class="column-visheshadina">
@@ -694,7 +693,7 @@
       <div>ಸ ರಾಷ್ಟ್ರಧರ್ಮನಿಷ್ಠಾವಾನ್ ಅಖಂಡಂ ಭಾರತಂ ಸ್ಮರೇತ್ ॥33॥</div>
     </div>
     <div class="ekatmata-para fontkannada ">
-     
+
       <div>ಭಾರತ ಮಾತಾ ಕೀ ಜಯ್</div>
     </div>
   </div>
@@ -799,6 +798,14 @@
       playBtn.style.display = "inline";
       pauseBtn.style.display = "none";
     });
+  });
+</script>
+
+<script>
+  // Fix print issue - scroll to top before printing
+  // footer is not visible in print if not scrolled to top
+  window.addEventListener('beforeprint', function () {
+    window.scrollTo(0, 0);
   });
 </script>
 
