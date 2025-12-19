@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GSAP August 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ IT ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ बेंगलुरु
+    दक्षिणा विभाग IT कार्य </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Kannada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 3px 10px 2px 10px;
+      font-family: 'Noto Serif';
+
+    }
+
+    .fontkannada {
+      font-family: 'Noto Serif Kannada';
+      font-size: 0.8em;
+    }
+
+    .fontenglish {
+      font-family: 'Noto Serif';
+      font-size: 0.8em;
+    }
+
+    .fontdevanagari {
+      font-family: 'Noto Serif Devanagari';
+      font-size: 0.9em;
+    }
+
+    .omkar {
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(255, 94, 0);
+    }
+
+    .heder-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 3px 0;
+    }
+
+    .left-header,
+    .right-header {
+      font-weight: bold;
+    }
+
+    .separator-thin {
+      border-top: 1px solid #000;
+      margin: 1px 0;
+    }
+
+    .separator-thick {
+      border-top: 3px solid #000;
+      margin: 1px 0;
+    }
+
+    .table-responsive {
+      display: flex;
+      column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 2px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+      background-color: #ffffff;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    .sectionheader {
+      color: rgb(255, 94, 0);
+      font-weight: bold;
+    }
+
+    .simple-para {
+      margin-top: 2px;
+    }
+
+    .simple-para p {
+      margin: 0px;
+    }
+
+    .right-aligned {
+      text-align: right;
+    }
+
+    @media (max-width: 600px) {
+      .heder-container {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .left-header::after {
+        content: "";
+      }
+
+      .right-header::before {
+        content: " ";
+      }
+    }
+
+    .geeturl {
+      color: black;
+      margin-left: 5px;
+      font-size: 0.6em;
+    }
+
+    .audio-icon {
+      display: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      color: #333;
+      /* Icon color */
+      vertical-align: middle;
+    }
+
+    .subhashitha div {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .smallparasep {
+      margin-top: 4px;
+    }
+
+    .pancchang-row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #cac0c0;
+      flex-wrap: nowrap;
+    }
+
+    .panchang-date {
+      padding: 1px 1px 1px 1px;
+      margin: 0px 0px 0px 8px;
+      align-items: center;
+      display: flex;
+    }
+
+    .panchang-text {
+      flex: 1;
+      width: auto;
+      /* remove width: 75% */
+      min-width: 0;
+      /* Allows content to shrink */
+      padding: 1px;
+
+    }
+
+    .table-pancang-specialday {
+      display: flex;
+      column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 2px;
+    }
+
+    .column-panchang {
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #cac0c0;
+      padding-left: 5px;
+    }
+
+    .panchanga-content {
+      padding-left: 8px;
+      padding-right: 5px;
+    }
+
+    .column-visheshadina {
+      flex: 1;
+      box-sizing: border-box;
+      padding-left: 15px;
+      border: 1px solid #cac0c0;
+    }
+
+
+    @media (max-width: 600px) {
+
+      .geeturl {
+        display: none
+      }
+
+      .column-panchang {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: 0%;
+        border:none;
+         padding-left: 0px
+      }
+
+      .column-visheshadina {
+        flex: 1;
+        border:none;
+        padding-left: 0px
+      }
+
+      .pancchang-row {
+        flex-direction: column;
+      }
+
+      .panchang-text,
+      .panchang-date {
+        width: 100%;
+        margin: 0;
+        padding: 2px 0;
+        display: block;
+      }
+
+      .panchang-date {
+        color: rgb(255, 94, 0);
+      }
+
+      .audio-icon {
+        display: inline;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="omkar fontdevanagari">ॐ</div>
+  <div class="heder-container ">
+    <div class="left-header fontkannada">ಭೌದ್ಧಿಕ ಯೋಜನೆ</div>
+    <div class="right-header fontdevanagari">भोधिक योजना</div>
+  </div>
+  <div class="separator-thin"></div>
+  <div class="separator-thick"></div>
+
+  <div class="sectionheader">
+    <span class="fontkannada">ಅಮೃತ ವಚನ - </span><span class="fontdevanagari">अमृतावचन</span>
+  </div>
+  <div class="simple-para fontkannada ">
+    <p>ಅಹಿಂಸೆಯ ಮಾರ್ಗವು ದುರ್ಬಲ ವ್ಯಕ್ತಿಗೆ ಇರುವಂಥದ್ದು ಅಲ್ಲ. ಅಹಿಂಸೆಯು ಒಬ್ಬ ತಾಯಿ ತನ್ನ ಕೋಪಗೊಂಡ ಮಗುವಿಗೆ ತೋರಿಸುವ ಪ್ರೀತಿಗೆ ಸಮಾನ.
+      ಆದರೆ ಅದು ಒಬ್ಬ ಹೇಡಿಯ ಬಾಯಿಯಿಂದ ಬಂದರೆ ಅಥವಾ ಅಥವಾ ಸಿಂಹದ ಮುಂದೆ ಅಳವಡಿಸಿಕೊಂಡರೆ, ಅದು ಕೇವಲ ಅಪಹಾಸ್ಯಕ್ಕೆ ಗುರಿಯಾಗುತ್ತದೆ.</p>
+    <div style="font-weight: bold;" class="right-aligned">- ಸ್ವಾಮಿ ವಿವೇಕಾನಂದ</div>
+  </div>
+  <div class="simple-para fontdevanagari">
+    <p>अहिंसा का मार्ग एक शक्तिहीन व्यक्ति के लिए नहीं है ।
+      अहिंसा उस प्रेम के समान है, जो माता अपनी क्रोधित शिशु के प्रति प्रदर्शित करती है। किन्तु यदि यह किसी कायर के मुख
+      से कहा जाए अथवा किसी सिंह के समक्ष अपनाया जाए, तो वह केवल उपहास का पात्र बनता है।
+
+    </p>
+    <div style="font-weight: bold;" class="right-aligned">- स्वामी विवेकानंद जी </div>
+  </div>
+  <div class="sectionheader">
+    <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span><a
+      href="https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk" target="_blank">
+      <span
+        class="geeturl fontenglish">(https://drive.google.com/file/d/1wliZRnR2R8xbDkKOI8YSME2MIj1vgBV2/view?usp=drivesdk)</span>
+
+      <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02zm2.5 0c0 3.04-1.72 5.64-4.24 6.92l1.42 1.42C19.1 18.65 21 15.53 21 12s-1.9-6.65-4.82-8.34l-1.42 1.42C17.28 6.36 19 8.96 19 12z" />
+      </svg>
+    </a>
+  </div>
+  <div class="table-responsive">
+    <div class="column fontkannada">
+      <div>ಇಧರ ಉಧರ ಬಿಖರೆ ಸುಮನೋಂ ಸೆ, ಕೀ ಯಹ ಗುರುಪೂಜಾ ।।ಪ।।</div>
+      <div class="smallparasep"></div>
+      <div>ಯಹಾ ಖಡೆ ಹೈ ನತ ಮಸ್ತಕ ಕರ, ಶ್ರೀ ಪ್ರತಾಪ ತಪಸ್ವೀ ನರವರ </div>
+      <div>ಯಹಾ ಖಡೆ ಗೋವಿಂದ ಗುರುವರ, ಯಹಾ ಹೈ ಕೇಶವ ಶಿವ ಸರಜಾ </div>
+      <div>ಯಹಾ ಹೈ ಕೇಶವ ಶಿವ ಸರಜಾ।।೧।।</div>
+
+      <div class="smallparasep"></div>
+
+      <div>ಯಹಾ ಜಲೆ ದೀಪಕ ಜೀವನ ಕೇ, ಗಡ ಚಿತ್ತೌಡ ಕೀ ಉನ ಯುವತಿನ ಕೇ </div>
+      <div>ಫೂಲ ಚಢೇ ಹೈ ಲಾಲ್ ಗುರು ಕೇ, ಜಿನ್ಹೋನೆ ಮೃತ್ಯು ಸುಖದ ಸಮ್ಝಾ </div>
+      <div>ಜಿನ್ಹೋನೆ ಮೃತ್ಯು ಸುಖದ ಸಮ್ಝಾ।।೨।।</div>
+
+      <div class="smallparasep"></div>
+      <div>ಲಾಕರ ಸಮಿಧಾ ನಿಜ ಯೌವನ ಕೀ, ಆಜ್ಯಾಹುತಿ ದೀ ಸೌಖ್ಯ ಸ್ವಪ್ನ ಕೀ </div>
+      <div>ರಖೀ ದಕ್ಷಿಣಾ ತನ ಮನ ಧನ ಕೀ, ಕ್ಯಾ ತೂ ದೇ ಸಕ್ತಾ ದೇ ಜಾ</div>
+      <div>ಕ್ಯಾ ತೂ ದೇ ಸಕ್ತಾ ದೇ ಜಾ ।।೩।। </div>
+      <div class="smallparasep"></div>
+      <div>ಸಾಕ್ಷೀ ಬನ ಇಸ ಹೋಮ ಹವನ ಕಾ, ಮಂತ್ರ ಸಿಖಾ ಉಜ್ವಲ ಜೀವನ್ ಕಾ
+      </div>
+      <div>ದೀಪಕವತ ದಿನ ರಾತ ಜಲನ ಕಾ, ಆ ಜಾ ರಾಷ್ಟ್ರಪುರುಷ ಆ ಜಾ
+      </div>
+      <div>ಆ ಜಾ ರಾಷ್ಟ್ರಪುರುಷ ಆ ಜಾ ।।೪।।
+      </div>
+    </div>
+    <div class="column fontdevanagari">
+      <div> इधर उधर बिखरे सुमनों से, की यह गुरुपूजा ।।प।।</div>
+      <div class="smallparasep"></div>
+      <div>यहा खडे है नत मस्तक कर, श्री प्रताप तपस्वी नरवर,
+      </div>
+      <div>यहा खडे गोविंद गुरुवर, यहा है केशव शिव सरजा
+      </div>
+      <div>यहा है केशव शिव सरजा।।१।।
+      </div>
+      <div class="smallparasep"></div>
+      <div>यहा जले दीपक जीवन के, गड चित्तौड की उन युवतिन के
+      </div>
+      <div>
+        फूल चडे है लाल गुरु के, जिन्होने मृत्यु सुखद समझा
+      </div>
+      <div>
+        जिन्होने मृत्यु सुखद समझा ।।२।।
+      </div>
+      <div class="smallparasep"></div>
+      <div>लाकर समिधा निज यौवन की, आज्याहुति दी सौख्य स्वप्न की ।।३।।
+      </div>
+      <div>रखी दक्षिणा तन मन धन की, क्या तू दे सकता दे जा
+      </div>
+      <div>क्या तू दे सकता दे जा ।।३।।</div>
+      <div class="smallparasep"></div>
+      <div>साक्षी बन इस होम हवन का, मंत्र सिखा उज्वल जीवन का
+      </div>
+      <div>दीपकवत दिन रात जलन का, आ जा राष्ट्रपुरुष आ जा
+      </div>
+      <div> आ जा राष्ट्रपुरुष आ जा ।।४।।
+      </div>
+    </div>
+  </div>
+  <div class="sectionheader">
+    <span class="fontkannada">ಸುಭಾಷಿತ - </span><span class="fontdevanagari">सुभाषित </span>
+  </div>
+  <div class="table-responsive">
+    <div class="column fontkannada">
+
+      <span class="subhashitha">
+        <div>ಅಗ್ನಿಃ ಶೇಷಂ ಋಣಃ ಶೇಷಂ, ಶತ್ರುಃ ಶೇಷಂ ತಥೈವ ಚ।
+        </div>
+        <div>ಪುನಃ ಪುನಃ ಪ್ರವರ್ಧೇತ, ತಸ್ಮಾತ್ ಶೇಷಂ ನ ಕಾರಯೇತ್॥</div>
+      </span>
+      <p></p>
+      <div>
+        <span>ಅರ್ಥ:</span>
+        <span>
+          ಬೆಂಕಿ, ಸಾಲ ಅಥವಾ ಶತ್ರುಗಳು ಸ್ವಲ್ಪವೇ ಉಳಿದರೂ ಅವು ಮತ್ತೆ ಮತ್ತೆ ಹೆಚ್ಚಾಗುತ್ತವೆ. ಆದ್ದರಿಂದ, ಈ ಮೂರನ್ನು ಸಂಪೂರ್ಣವಾಗಿ
+          ನಾಶಪಡಿಸಬೇಕು; ಒಂದು ಸಣ್ಣ ಕುರುಹು ಕೂಡ ಉಳಿಯಲು ಬಿಡಬಾರದು.
+        </span>
+      </div>
+      <!-- <div> <span style="font-style: italic;">ಆಧಾರ: ವಿವೇಕಚೂಡಾಮಣಿ (ಶ್ಲೋಕ 25)</span></div> -->
+    </div>
+    <div class="column fontdevanagari">
+      <span class="subhashitha">
+        <div>अग्निः शेषं ऋणः शेषं, शत्रुः शेषं तथैव च ।
+        </div>
+        <div>पुनः पुनः प्रवर्धेत, तस्मात् शेषं न कारयेत् ॥</div>
+      </span>
+      <p></p>
+      <div>
+        <span>अर्थ:</span>
+        <span>
+          यदि अग्नि, ऋण या शत्रु थोड़े भी शेष रह जाएँ, तो वे बार-बार बढ़ते हैं। इसलिए, इन तीनों को पूर्णतः समाप्त करना
+          चाहिए; कोई अंश भी शेष नहीं छोड़ना चाहिए।
+        </span>
+      </div>
+      <!-- <div><span style="font-style: italic;"> आधार: विवेकचूडामणि (श्लोक
+          25)</span></div> -->
+    </div>
+  </div>
+
+
+
+  <div class="table-pancang-specialday">
+    <div class="column-panchang">
+      <div class="sectionheader">
+        <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
+      </div>
+      <div class="simple-para fontkannada ">
+        ಕಲಿಯುಗಾಬ್ದ 5127, ಶಾಲಿವಾಹನ ಶಕೆ 1948, ಶ್ರೀ ವಿಶ್ವಾವಸು ಸಂವತ್ಸರ
+      </div>
+      <div class="simple-para fontdevanagari ">
+        कलियुगाब्ध 5127, शालिवाहन शक 1948, विश्वावासु सम्वत्सर
+      </div>
+      <div class="panchanga-content">
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಶ್ರಾವಣ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ನವಮಿ ತಿಥಿ, ವಿಶಾಖಾ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, वर्षा ऋतु, श्रावण मास, शुक्ल पक्ष, नवमी तिथि, विशाखा नक्षत्र </div>
+          </div>
+          <div class="panchang-date fontenglish">03-August-2025</div>
+        </div>
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಶ್ರಾವಣ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಪ್ರತಿಪದ ತಿಥಿ, ಧನಿಷ್ಠ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, वर्षा ऋतु, श्रावण मास, शुक्ल पक्ष, प्रतिपदा तिथि, धनिष्ठा नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish">10-August-2025</div>
+        </div>
+        <div class="pancchang-row ">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಶ್ರಾವಣ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ನವಮಿ ತಿಥಿ, ರೋಹಿಣಿ ನಕ್ಷತ್ರ </div>
+            <div class="fontdevanagari">दक्षिणायन, वर्षा ऋतु, श्रावण मास, कृष्ण पक्ष, नवमी तिथि, रोहिणी नक्षत्र </div>
+          </div>
+          <div class="panchang-date fontenglish ">17-August-2025</div>
+        </div>
+        <div class="pancchang-row ">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಭಾದ್ರಪದ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಪ್ರತಿಪದ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">दक्षिणायन, वर्षा ऋतु, भाद्रपद मास, कृष्ण पक्ष, प्रतिपदा तिथि, पूर्वाषाढ़ा
+              नक्षत्र </div>
+          </div>
+          <div class="panchang-date fontenglish">25-August-2025</div>
+        </div>
+        <div class="pancchang-row ">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಭಾದ್ರಪದ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಅನುರಾಧ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, वर्षा ऋतु, भाद्रपद मास, कृष्ण पक्ष, अष्टमी तिथि, अनुराधा नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish">31-August-2025</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="column-visheshadina">
+      <div class="sectionheader">
+        <span class="fontkannada">ತಿಂಗಳ ವಿಶೇಷ ದಿನಗಳು 
+        </span>
+      </div>
+      <div class="pancchang-row">
+        <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ವರ್ಷ ಋತು, ಶ್ರಾವಣ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ನವಮಿ ತಿಥಿ, ವಿಶಾಖಾ ನಕ್ಷತ್ರ</div>
+      </div>
+    </div>
+  </div>
+  <div class="separator-thin"></div>
+  <div class="heder-container">
+    <div class="left-header"><span class="fontenglish"></span><span class="fontkannada">ಐ. ಟಿ. ಕಾರ್ಯ, ಬೆಂಗಳೂರು ದಕ್ಷಿಣ
+        ವಿಭಾಗ
+      </span> </div>
+    <div class="left-header"><span class="fontkannada">ಶ್ರಾವಣ,ಭಾದ್ರಪದ</span>/ <span class="fontdevanagari">
+        श्रावण,भाद्रपद</span> <span class="fontenglish">5127(August 2025)</span></div>
+    <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
+        दक्षिणा
+        विभाग</span>
+    </div>
+  </div>
+</body>
+
+</html>

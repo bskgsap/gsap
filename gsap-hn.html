@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GSAP December 2025, ರಾಷ್ತ್ರೀಯ ಸ್ವಯಂ ಸೇವಕ ಸಂಘ ಬೆಂಗಳೂರು ದಕ್ಷಿಣ ವಿಭಾಗ ಐ. ಟಿ. ಕಾರ್ಯ/राष्ट्रीय स्वयं सेवका संघ
+    बेंगलुरु
+    दक्षिणा विभाग आई. टी. कार्य</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Kannada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.rss.org//images/ico_2205.ico">
+  <style>
+    @page {
+      size: A4;
+      margin: 1mm 1mm 1mm 1mm;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      #footerseperator {
+        display: none;
+      }
+
+      #footer {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        border-top: 1px solid #000;
+      }
+    }
+
+
+    body {
+      margin: 3px 10px 2px 10px;
+      font-family: 'Noto Serif';
+
+    }
+
+    .fontkannada {
+      font-family: 'Noto Serif Kannada';
+      font-size: 0.8em;
+    }
+
+    .fontenglish {
+      font-family: 'Noto Serif';
+      font-size: 0.8em;
+    }
+
+    .fontdevanagari {
+      font-family: 'Noto Serif Devanagari';
+      font-size: 0.9em;
+    }
+
+    .omkar {
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(255, 94, 0);
+    }
+
+    .heder-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 3px 0;
+    }
+
+    .left-header,
+    .right-header {
+      font-weight: bold;
+    }
+
+    .separator-thin {
+      border-top: 1px solid #000;
+      margin: 1px 0;
+    }
+
+    .separator-thick {
+      border-top: 3px solid #000;
+      margin: 1px 0;
+    }
+
+    .table-responsive {
+      display: flex;
+      column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 2px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+      background-color: #ffffff;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    .sectionheader {
+      color: rgb(255, 94, 0);
+      font-weight: bold;
+    }
+
+    .simple-para {
+      margin-top: 2px;
+    }
+
+    .ekatmata-para {
+      margin-top: 8px;
+    }
+
+    .simple-para p {
+      margin: 0px;
+    }
+
+    .right-aligned {
+      text-align: right;
+    }
+
+    #ekatmatastotra {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .heder-container {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .left-header::after {
+        content: "";
+      }
+
+      .right-header::before {
+        content: " ";
+      }
+    }
+
+    .geeturl {
+      color: black;
+      margin-left: 5px;
+      font-size: 0.6em;
+    }
+
+    .audio-icon {
+      display: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      color: #333;
+      /* Icon color */
+      vertical-align: middle;
+    }
+
+    .subhashitha div {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .smallparasep {
+      margin-top: 4px;
+    }
+
+    .pancchang-row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #cac0c0;
+      flex-wrap: nowrap;
+    }
+
+
+
+    .panchang-date {
+      padding: 1px 1px 1px 1px;
+      margin: 0px 0px 0px 8px;
+      align-items: center;
+      display: flex;
+    }
+
+    .panchang-text {
+      flex: 1;
+      width: auto;
+      /* remove width: 75% */
+      min-width: 0;
+      /* Allows content to shrink */
+      padding: 1px;
+
+    }
+
+    .table-pancang-specialday {
+      display: flex;
+      column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 2px;
+    }
+
+    .column-panchang {
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+
+    .panchanga-content {
+      padding-left: 8px;
+    }
+
+    .column-visheshadina {
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+
+
+    @media (max-width: 600px) {
+
+      .fontkannada {
+        font-size: 1em;
+      }
+
+      .fontenglish {
+        font-size: 1em;
+      }
+
+      .fontdevanagari {
+        font-size: 1.1em;
+      }
+
+      .omkar {
+        font-size: 1.2em;
+      }
+
+      .geeturl {
+        display: none
+      }
+
+      .column-panchang {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: 0%;
+      }
+
+      .column-visheshadina {
+        flex: 1;
+      }
+
+      .pancchang-row {
+        flex-direction: column;
+      }
+
+      .panchang-text {
+        padding-bottom: 0px;
+      }
+
+      .panchang-text,
+      .panchang-date {
+        width: 100%;
+        margin: 0;
+        display: block;
+      }
+
+      .panchang-date {
+        padding: 0 0 10px 0;
+      }
+
+      .panchang-highlight {
+        font-weight: normal
+      }
+
+      .panchang-highlight .panchang-date {
+        color: rgb(255, 94, 0);
+
+      }
+
+      .panchang-grey {
+        color: #8d8c8c;
+        font-weight: lighter;
+      }
+
+      .audio-icon {
+        display: inline;
+      }
+
+      .audio-icon {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+
+      }
+
+      .audio-icon.large {
+        width: 36px;
+        height: 36px;
+      }
+
+      #ekatmatastotra {
+        display: inline;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <svg style="display:none;">
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z"></path>
+    </symbol>
+
+    <symbol id="icon-pause" viewBox="0 0 24 24">
+      <path d="M6 5h4v14H6zM14 5h4v14h-4z"></path>
+    </symbol>
+  </svg>
+
+
+  <div class="omkar fontdevanagari">ॐ</div>
+  <div class="heder-container ">
+    <div class="left-header fontkannada">ಭೌದ್ಧಿಕ ಯೋಜನೆ</div>
+    <div class="right-header fontdevanagari">बौद्धिक योजना</div>
+  </div>
+  <div class="separator-thin"></div>
+  <div class="separator-thick"></div>
+
+  <div class="sectionheader">
+    <span class="fontkannada">ಅಮೃತ ವಚನ - </span><span class="fontdevanagari">अमृतावचन</span>
+    <audio id="amruthavachanaAudio" data-playbutton="amruthavachanaAudioplay"
+      data-pausebutton="amruthavachanaAudiopause"
+      src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/GSAP/GSAP_amruthavachana_des_25.mp3"></audio>
+
+    <svg id="amruthavachanaAudioplay" class="audio-icon audio-play">
+      <use href="#icon-play"></use>
+    </svg>
+
+    <svg id="amruthavachanaAudiopause" class="audio-icon audio-pause" style="display:none;">
+      <use href="#icon-pause"></use>
+    </svg>
+  </div>
+  <div class="simple-para fontkannada ">
+    <p>ನಮ್ಮ ಸಮಾಜ ವ್ಯವಸ್ಥೆಯ ಅಡಿಪಾಯವು ಚತುರ್ವಿಧ ಪುರುಷಾರ್ಥಗಳ ಮೇಲೆ ಆಧಾರಿತವಾದ ಜೀವನ ದೃಷ್ಟಿಯೇ ಆಗಿದೆ ಎಂಬುದನ್ನು ನಾವು ಮರೆಯಬಾರದು. ಈ
+      ದೃಷ್ಟಿಕೋನವೇ ಭಾರತಕ್ಕೆ ವಿಶ್ವಮಟ್ಟದಲ್ಲಿ ಗೌರವ ತಂದುಕೊಟ್ಟಿದೆ. ಈ ಜೀವನ ದೃಷ್ಟಿಯು ಕೇವಲ ಕಲ್ಪನೆಯಲ್ಲ, ಬದಲಿಗೆ ಸಾವಿರಾರು ವರ್ಷಗಳ ಕಾಲ
+      ಬದುಕಿ ತೋರಿಸಿದ ವಾಸ್ತವ ಎಂಬುದಕ್ಕೆ ನಮ್ಮ ಇತಿಹಾಸವೇ ಸಾಕ್ಷಿಯಾಗಿದೆ. ವಿದೇಶಿ ಪ್ರವಾಸಿಗರು ಇಲ್ಲಿನ ಸಂಪನ್ನತೆಯ ಜೊತೆಗೆ, ಮಾನವ ಜೀವನದ
+      ಅತ್ಯುನ್ನತ ಘನತೆಯನ್ನೂ ದೃಢಪಡಿಸಿದ್ದಾರೆ.</p>
+    <div style="font-weight: bold;" class="right-aligned">- ಪರಮ ಪೂಜನೀಯ ಶ್ರೀ ಗುರೂಜಿ </div>
+  </div>
+  <div class="simple-para fontdevanagari">
+    <p>हमें यह नहीं भूलना चाहिए कि चातुर्विध पुरुषार्थ पर आधारित जीवन-दृष्टि ही हमारी समाज-व्यवस्था की आधारशिला रही है,
+      जिसने भारत को विश्वमंच पर गौरव दिलाया। हमारा इतिहास इस सत्य का साक्षी है कि यह दृष्टि कल्पना नहीं, अपितु सहस्रों
+      वर्षों तक जीया गया यथार्थ रही है। विदेशी यात्रियों ने यहाँ की संपन्नता के साथ-साथ मानव जीवन की उच्चतम गरिमा की भी
+      पुष्टि की है। ।
+    </p>
+    <div style="font-weight: bold;" class="right-aligned">- परम पूजनीय श्री गुरूजी</div>
+  </div>
+  <div class="sectionheader">
+    <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span><a
+      href="https://www.youtube.com/watch?v=lVVTcd9fSR8" target="_blank">
+      <span class="geeturl fontenglish">(https://www.youtube.com/watch?v=lVVTcd9fSR8)</span>
+
+      <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02zm2.5 0c0 3.04-1.72 5.64-4.24 6.92l1.42 1.42C19.1 18.65 21 15.53 21 12s-1.9-6.65-4.82-8.34l-1.42 1.42C17.28 6.36 19 8.96 19 12z" />
+      </svg>
+    </a>
+  </div>
+  <div class="table-responsive">
+    <div class="column fontkannada">
+      <div>ಮನಸಾ ಸತತಂ ಸ್ಮರಣೀಯಂ ವಚಸಾ ಸತತಂ ವದನೀಯಂ।</div>
+      <div>ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ॥ಲೋಕಹಿತಮ್॥</div>
+      <div class="smallparasep"></div>
+      <div>ನ ಭೋಗಭವನೇ ರಮಣೀಯಂ ನ ಚ ಸುಖಶಯನೇ ಶಯನೀಯನಂ। </div>
+      <div>ಅಹರ್ನಿಶಂ ಜಾಗರಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ॥ಮನಸಾ ॥</div>
+
+      <div class="smallparasep"></div>
+
+      <div>ನ ಜಾತು ದುಃಖಂ ಗಣನೀಯಂ ನ ಚ ನಿಜಸೌಖ್ಯಂ ಮನನೀಯಂ।</div>
+      <div>ಕಾರ್ಯಕ್ಷೇತ್ರೇ ತ್ವರಣೀಯಂ ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ॥ಮನಸಾ ॥</div>
+
+      <div class="smallparasep"></div>
+      <div>ದುಃಖಸಾಗರೇ ತರಣೀಯಂ, ಕಷ್ಟಪರ್ವತೇ ಚರಣೀಯಂ।</div>
+      <div>ವಿಪತ್ತಿವಿಪಿನೇ ಭ್ರಮಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ॥ಮನಸಾ ॥</div>
+
+      <div class="smallparasep"></div>
+      <div>ಗಹನಾರಣ್ಯೇ ಘನಾಂಧಕಾರೇ, ಬಂಧುಜನಾ ಯೇ ಸ್ಥಿತಾ ಗಹ್ವರೇ।</div>
+      <div>ತತ್ರಾ ಮಯಾ ಸಂಚರಣೀಯಂ, ಲೋಕಹಿತಂ ಮಮ ಕರಣೀಯಮ್ ॥ಮನಸಾ ॥</div>
+    </div>
+    <div class="column fontdevanagari">
+      <div>मनसा सततं स्मरणीयं मनसा सततं स्मरणीयं।</div>
+      <div> लोकहितं मम करणीयम् ॥लोकहितम्॥</div>
+
+      <div class="smallparasep"></div>
+      <div>न भोगभवने रमणीयं न च सुखशयने शयनीयम्।</div>
+      <div>अहर्निशं जागरणीयं लोकहितं मम करणीयम् ॥मनसा ॥</div>
+
+      <div class="smallparasep"></div>
+      <div>न जातु दुःखं गणनीयं न च निजसौख्यं मननीयम् ।</div>
+      <div>कार्यक्षेत्रे त्वरणीयं लोकहितं मम करणीयम् ॥मनसा ॥</div>
+
+      <div class="smallparasep"></div>
+      <div>दुःखसागरे तरणीयं कष्टपर्वते चरणीयम्।</div>
+      <div>विपत्तिविपिने भ्रमणीयं लोकहितं मम करणीयम् ॥मनसा ॥</div>
+
+      <div class="smallparasep"></div>
+      <div>गहनारण्ये घनान्धकारे बन्धुजना ये स्थिता गह्वरे ।</div>
+      <div> तत्र मया सञ्चरणीयं लोकहितं मम करणीयम् ॥मनसा ॥ </div>
+    </div>
+  </div>
+
+
+
+  <div class="sectionheader">
+    <span class="fontkannada">ಸುಭಾಷಿತ - </span><span class="fontdevanagari">सुभाषित </span>
+    <audio id="subhashitaAudio" data-playbutton="subhashitaAudioplay" data-pausebutton="subhashitaAudiopause"
+      src="https://raw.githubusercontent.com/bskgsap/gsap/refs/heads/main/GSAP/GSAP_Subhashitha_dec_25.mp3"></audio>
+
+    <svg id="subhashitaAudioplay" class="audio-icon audio-play">
+      <use href="#icon-play"></use>
+    </svg>
+
+    <svg id="subhashitaAudiopause" class="audio-icon audio-pause" style="display:none;">
+      <use href="#icon-pause"></use>
+    </svg>
+
+  </div>
+  <div class="table-responsive">
+    <div class="column fontkannada">
+
+      <span class="subhashitha">
+        <div>ಕರ್ಮಣೈವ ಹಿ ಸಂಸಿದ್ಧಿಮಾಸ್ಥಿತಾ ಜನಕಾದಯ:।
+        </div>
+        <div>ಲೋಕಸಂಗ್ರಹಮೇವಾಪಿ ಸಂಪಶ್ಯನ್ಕರ್ತುಮರ್ಹಸಿ ॥ ೩.೨೦ ॥</div>
+      </span>
+      <p></p>
+      <div>
+        <span>ಅರ್ಥ:</span>
+        <span>ರಾಜ ಜನಕರಂತಹ ಶ್ರೇಷ್ಠರು ನಿಷ್ಠೆಯಿಂದ ಕರ್ಮಗಳನ್ನು ಮಾಡಿಯೇ ಸಿದ್ಧಿ ಪಡೆದರು. ನಾವು ಕೂಡ ಕೇವಲ ನಮ್ಮ ಮೋಕ್ಷಕ್ಕಾಗಿ
+          ಮಾತ್ರವಲ್ಲದೆ, ನಮ್ಮ ಪ್ರಭಾವದ ಕ್ಷೇತ್ರದಲ್ಲಿ ಸಮಾಜದ ಸ್ಥಿರತೆ ಮತ್ತು ಸ್ಫೂರ್ತಿಗಾಗಿ ಕರ್ಮವನ್ನು ಮಾಡಬೇಕು. ನಾವು ಎಲ್ಲೇ ಇದ್ದರೂ
+          ಧರ್ಮ ಮತ್ತು ಸಮತೋಲನವನ್ನು ಸ್ಥಾಪಿಸುವಲ್ಲಿ ತೊಡಗಿಸಿಕೊಳ್ಳುವುದೇ ಲೋಕಕಲ್ಯಾಣದ ಕಾರ್ಯವಾಗಿದೆ.</span>
+      </div>
+      <div> <span style="font-style: italic;">ಆಧಾರ: ಶ್ರೀಮದ್ ಭಗವದ್ಗೀತೆ</span></div>
+    </div>
+    <div class="column fontdevanagari">
+      <span class="subhashitha">
+        <div>कर्मणैव हि संसिद्धिमास्थिता जनकादय:।
+        </div>
+        <div>लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ॥ ३.२० ॥</div>
+      </span>
+      <p></p>
+      <div>
+        <span>अर्थ:</span>
+        <span>
+          राजा जनक जैसे श्रेष्ठों ने कर्म द्वारा सिद्धि प्राप्त की।
+          हमें भी केवल निज मोक्ष हेतु नहीं, अपितु अपने प्रभावक्षेत्र में समाज की स्थिरता और प्रेरणा हेतु कर्म करना
+          चाहिए। जहाँ हम हैं, वहाँ धर्म और संतुलन की स्थापना के लिए संलग्न होना ही लोकसंग्रह है।
+
+        </span>
+      </div>
+      <div><span style="font-style: italic;"> आधार: श्रीमद् भगवद्गीता</span></div>
+    </div>
+  </div>
+
+
+
+  <div class="table-pancang-specialday">
+    <div class="column-panchang">
+      <div class="sectionheader">
+        <span class="fontkannada">ಪಂಚಾಂಗ - </span><span class="fontdevanagari">पंचांग </span>
+      </div>
+      <div class="simple-para fontkannada ">
+        ಕಲಿಯುಗಾಬ್ದ 5127, ಶಾಲಿವಾಹನ ಶಕೆ 1948, ಶ್ರೀ ವಿಶ್ವಾವಸು ಸಂವತ್ಸರ
+      </div>
+      <div class="simple-para fontdevanagari ">
+        कलियुगाब्ध 5127, शालिवाहन शक 1948, विश्वावासु सम्वत्सर
+      </div>
+      <div class="panchanga-content">
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ತ್ರಿತೀಯಾ ತಿಥಿ, ಪುನರ್ವಸು ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, तृतीया तिथि, पुनर्वसु नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish">07-December-2025</div>
+        </div>
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಮಾರ್ಗಶಿರ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ದಶಮಿ ತಿಥಿ, ಹಸ್ತ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, मार्गशीर्ष मास, कृष्ण पक्ष, दशमी तिथि, हस्त नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish">14-December-2025</div>
+        </div>
+        <div class="pancchang-row ">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಪಾಡ್ಯ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ</div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, प्रतिपदा तिथि, पूर्वाषाढ़ा नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish ">21-December-2025</div>
+        </div>
+        <div class="pancchang-row ">
+          <div class="panchang-text">
+            <div class="fontkannada">ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಉತ್ತರಾಭಾದ್ರಪದ ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">दक्षिणायन, हेमन्त ऋतु, पौष मास, शुक्ल पक्ष, अष्टमी तिथि, उत्तरभाद्रपद नक्षत्र
+            </div>
+          </div>
+          <div class="panchang-date fontenglish">28-December-2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="column-visheshadina">
+
+    </div>
+  </div>
+  <div id="ekatmatastotra">
+    <div class="sectionheader">
+      <span class="fontkannada">ಏಕಾತ್ಮತಾ ಸ್ತ್ರೋತ್ರ - </span><span class="fontdevanagari">एकात्मता स्तोत्र </span>
+    </div>
+    <div class="ekatmata-para fontkannada ">
+      <div>ಓಂ ಸಚ್ಚಿದಾನಂದ ರೂಪಾಯ ನಮೋಽಸ್ತು ಪರಮಾತ್ಮನೇ ।</div>
+      <div>ಜ್ಯೋತಿರ್ಮಯ ಸ್ವರೂಪಾಯ ವಿಶ್ವಮಾಂಗಲ್ಯ ಮೂರ್ತಯೇ ॥1॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಪ್ರಕೃತಿಃ ಪಂಚಭೂತಾನಿ ಗ್ರಹ ಲೋಕ ಸ್ವರಾಸ್ತಥಾ ।</div>
+      <div>ದಿಶಃ ಕಾಲಶ್ಚ ಸರ್ವೇಷಾಂ ಸದಾ ಕುರ್ವಂತು ಮಂಗಲಂ॥2॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರತ್ನಾಕರಾ ಧೌತಪದಾಂ ಹಿಮಾಲಯ ಕಿರೀಟಿನೀಂ ।</div>
+      <div>ಬ್ರಹ್ಮರಾಜರ್ಷಿರತ್ನಾಢ್ಯಾಂ ವಂದೇ ಭಾರತಮಾತರಂ ॥3॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಮಹೇಂದ್ರೋ ಮಲಯಃ ಸಹ್ಯೋ ದೇವತಾತ್ಮಾ ಹಿಮಾಲಯಃ ।</div>
+      <div>ಧ್ಯೇಯೋ ರೈವತಕೋ ವಿಂಧ್ಯೋ ಗಿರಿಶ್ಚಾರಾವಲಿಸ್ತಥಾ ॥4॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಗಂಗಾ ಸರಸ್ವತೀ ಸಿಂಧರ್ ಬ್ರಹ್ಮಪುತ್ರಶ್ಚ ಗಂಡಕೀ ।</div>
+      <div>ಕಾವೇರೀ ಯಮುನಾ ರೇವಾ ಕೃಷ್ಣಾ ಗೋದಾ ಮಹಾನದೀ ॥5॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅಯೋಧ್ಯಾ ಮಥುರಾ ಮಾಯಾ ಕಾಶೀ ಕಾಂಚ ಅವಂತಿಕಾ ।</div>
+      <div>ವೈಶಾಲೀ ದ್ವಾರಿಕಾ ಧ್ಯೇಯಾ ಪುರೀ ತಕ್ಷಶಲಾ ಗಯಾ ॥6॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಪ್ರಯಾಗಃ ಪಾಟಲೀಪುತ್ರಂ ವಿಜಯಾನಗರಂ ಮಹತ್ ।</div>
+      <div>ಇಂದ್ರಪ್ರಸ್ಥಂ ಸೋಮನಾಥಸ್ತಥಾಽಮೃತಸರಃ ಪ್ರಿಯಂ॥7॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಚತುರ್ವೇದಾಃ ಪುರಾಣಾನಿ ಸರ್ವೋಪನಿಷದಸ್ತಥಾ ।</div>
+      <div>ರಾಮಾಯಣಂ ಭಾರತಂ ಚ ಗೀತಾ ಸದ್ದರ್ಶನಾನಿ ಚ ॥8॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಜೈನಾಗಮಾಸ್ತ್ರಿಪಿಟಕಾ ಗುರುಗ್ರಂಥಃ ಸತಾಂ ಗಿರಃ ।</div>
+      <div>ಏಷ ಜ್ಞಾನನಿಧಿಃ ಶ್ರೇಷ್ಠಃ ಶ್ರದ್ಧೇಯೋ ಹೃದಿ ಸರ್ವದಾ॥9॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅರುಂಧತ್ಯನಸೂಯ ಚ ಸಾವಿತ್ರೀ ಜಾನಕೀ ಸತೀ ।</div>
+      <div>ದ್ರೌಪದೀ ಕಣ್ಣಗೀ ಗಾರ್ಗೀ ಮೀರಾ ದುರ್ಗಾವತೀ ತಥಾ ॥10॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಲಕ್ಷ್ಮೀರಹಲ್ಯಾ ಚನ್ನಮ್ಮಾ ರುದ್ರಮಾಂಬಾ ಸುವಿಕ್ರಮಾ ।</div>
+      <div>ನಿವೇದಿತಾ ಸಾರದಾ ಚ ಪ್ರಣಮ್ಯ ಮಾತೃ ದೇವತಾಃ ॥11॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಶ್ರೀ ರಾಮೋ ಭರತಃ ಕೃಷ್ಣೋ ಭೀಷ್ಮೋ ಧರ್ಮಸ್ತಥಾರ್ಜುನಃ ।</div>
+      <div>ಮಾರ್ಕಂಡೇಯೋ ಹರಿಶ್ಚಂದ್ರ ಪ್ರಹ್ಲಾದೋ ನಾರದೋ ಧ್ರುವಃ ॥12॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಹನುಮಾನ್ ಜನಕೋ ವ್ಯಾಸೋ ವಸಿಷ್ಠಶ್ಚ ಶುಕೋ ಬಲಿಃ ।</div>
+      <div>ದಧೀಚಿ ವಿಶ್ವಕರ್ಮಾಣೌ ಪೃಥು ವಾಲ್ಮೀಕಿ ಭಾರ್ಗವಃ ॥13॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಭಗೀರಥಶ್ಚೈಕಲವ್ಯೋ ಮನುರ್ಧನ್ವಂತರಿಸ್ತಥಾ ।</div>
+      <div>ಶಿಬಿಶ್ಚ ರಂತಿದೇವಶ್ಚ ಪುರಾಣೋದ್ಗೀತಕೀರ್ತಯಃ ॥14॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಬುದ್ಧ ಜಿನೇಂದ್ರ ಗೋರಕ್ಷಃ ಪಾಣಿನಿಶ್ಚ ಪತಂಜಲಿಃ ।</div>
+      <div>ಶಂಕರೋ ಮಧ್ವ ನಿಂಬಾರ್ಕೌ ಶ್ರೀ ರಾಮಾನುಜ ವಲ್ಲಭೌ ॥15॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಝೂಲೇಲಾಲೋಽಥ ಚೈತನ್ಯಃ ತಿರುವಲ್ಲುವರಸ್ತಥಾ ।</div>
+      <div>ನಾಯನ್ಮಾರಾಲವಾರಾಶ್ಚ ಕಂಬಶ್ಚ ಬಸವೇಶ್ವರಃ ॥16॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ದೇವಲೋ ರವಿದಾಸಶ್ಚ ಕಬೀರೋ ಗುರು ನಾನಕಃ ।</div>
+      <div>ನರಸೀಸ್ತುಲಸೀದಾಸೋ ದಶಮೇಷೋ ದೃಢವ್ರತಃ ॥17॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಶ್ರೀಮದ್ ಶಂಕರದೇವಶ್ಚ ಬಂಧೂ ಸಾಯಣಮಾಧವೌ ।</div>
+      <div>ಜ್ಞಾನೇಶ್ವರಸ್ತುಕಾರಾಮೋ ರಾಮದಾಸಃ ಪುರಂದರಃ ॥18॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಬಿರಸಾ ಸಹಜಾನಂದೋ ರಮಾನಂದಸ್ತಥಾ ಮಹಾನ್ ।</div>
+      <div>ವಿತರಂತು ಸದೈವೈತೇ ದೈವೀಂ ಸದ್ಗುಣಸಂಪದಂ ॥19॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಭರತರ್ಷಿಃ ಕಾಲಿದಾಸಃ ಶ್ರೀಭೋಜೋ ಜನಕಸ್ತಥಾ ।</div>
+      <div>ಸೂರದಾಸಸ್ತ್ಯಾಗರಾಜೋ ರಸಖಾನಶ್ಚ ಸತ್ಕವಿಃ ॥20॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರವಿವರ್ಮಾ ಭಾತಖಂಡೇ ಭಾಗ್ಯಚಂದ್ರಃ ಸ ಭೂಪತಿಃ ।</div>
+      <div>ಕಲಾವಂತಶ್ಚ ವಿಖ್ಯಾತಾಃ ಸ್ಮರಣೀಯಾ ನಿರಂತರಂ ॥21॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅಗಸ್ತ್ಯಃ ಕಂಬು ಕೌಂಡಿನ್ಯೌ ರಾಜೇಂದ್ರಶ್ಚೋಲವಂಶಜಃ ।</div>
+      <div>ಅಶೋಕಃ ಪುಶ್ಯ ಮಿತ್ರಶ್ಚ ಖಾರವೇಲಃ ಸುನೀತಿಮಾನ್ ॥22॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಚಾಣಕ್ಯ ಚಂದ್ರಗುಪ್ತೌ ಚ ವಿಕ್ರಮಃ ಶಾಲಿವಾಹನಃ ।</div>
+      <div>ಸಮುದ್ರಗುಪ್ತಃ ಶ್ರೀಹರ್ಷಃ ಶೈಲೇಂದ್ರೋ ಬಪ್ಪರಾವಲಃ ॥23॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಲಾಚಿದ್ ಭಾಸ್ಕರ ವರ್ಮಾ ಚ ಯಶೋಧರ್ಮಾ ಚ ಹೂಣಜಿತ್ ।</div>
+      <div>ಶ್ರೀಕೃಷ್ಣದೇವರಾಯಶ್ಚ ಲಲಿತಾದಿತ್ಯ ಉದ್ಬಲಃ ॥24॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಮುಸುನೂರಿನಾಯಕೌ ತೌ ಪ್ರತಾಪಃ ಶಿವ ಭೂಪತಿಃ ।</div>
+      <div>ರಣಜಿತಸಿಂಹ ಇತ್ಯೇತೇ ವೀರಾ ವಿಖ್ಯಾತ ವಿಕ್ರಮಾಃ ॥25॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ವೈಜ್ಞಾನಿಕಾಶ್ಚ ಕಪಿಲಃ ಕಣಾದಃ ಶುಶ್ರುತಸ್ತಥಾ ।</div>
+      <div>ಚರಕೋ ಭಾಸ್ಕರಾಚಾರ್ಯೋ ವರಾಹಮಿಹಿರ ಸುಧೀಃ ॥26॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ನಾಗಾರ್ಜುನೋ ಭರದ್ವಾಜ ಆರ್ಯಭಟ್ಟೋ ಬಸುರ್ಬುಧಃ ।</div>
+      <div>ಧ್ಯೇಯೋ ವೆಂಕಟರಾಮಶ್ಚ ವಿಜ್ಞಾ ರಾಮಾನುಜಾದಯಃ ॥27॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ರಾಮಕೃಷ್ಣೋ ದಯಾನಂದೋ ರವೀಂದ್ರೋ ರಾಮಮೋಹನಃ ।</div>
+      <div>ರಾಮತೀರ್ಥೋಽರವಿಂದಶ್ಚ ವಿವೇಕಾನಂದ ಉದ್ಯಶಃ ॥28॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ದಾದಾ ಭಾಯಿ ಗೋಪಬಂಧುಃ ತಿಲಕೋ ಗಾಂಧಿರಾದೃತಾಃ ।</div>
+      <div>ರಮಣೋ ಮಾಲವೀಯಶ್ಚ ಶ್ರೀ ಸುಬ್ರಮಣ್ಯಭಾರತೀ ॥29॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸುಭಾಷಃ ಪ್ರಣವಾನಂದಃ ಕ್ರಾಂತಿವೀರೋ ವಿನಾಯಕಃ ।</div>
+      <div>ಠಕ್ಕರೋ ಭೀಮರಾವಶ್ಚ ಫುಲೇ ನಾರಾಯಣೋ ಗುರುಃ ॥30॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸಂಘಶಕ್ತಿ ಪ್ರಣೇತಾರೌ ಕೇಶವೋ ಮಾಧವಸ್ತಥಾ ।</div>
+      <div>ಸ್ಮರಣೀಯಾಃ ಸದೈವೈತೇ ನವಚೈತನ್ಯದಾಯಕಾಃ ॥31॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಅನುಕ್ತಾ ಯೇ ಭಕ್ತಾಃ ಪ್ರಭುಚರಣ ಸಂಸಕ್ತಹೃದಯಾಃ ।</div>
+      <div>ಅನಿರ್ದಿಷ್ಟಾ ವೀರಾ ಅಧಿಸಮರಮುದ್ಧ್ವಸ್ತರಿಪವಃ</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಸಮಾಜೋದ್ಧರ್ತಾರಃ ಸುಹಿತಕರ ವಿಜ್ಞಾನ ನಿಪುಣಾಃ ।</div>
+      <div>ನಮಸ್ತೇಭ್ಯೋ ಭೂಯಾತ್ ಸಕಲ ಸುಜನೇಭ್ಯಃ ಪ್ರತಿದಿನಂ ॥32॥</div>
+    </div>
+
+    <div class="ekatmata-para fontkannada ">
+      <div>ಇದಮೇಕಾತ್ಮತಾ ಸ್ತೋತ್ರಂ ಶ್ರದ್ಧಯಾ ಯಃ ಸದಾ ಪಠೇತ್ ।</div>
+      <div>ಸ ರಾಷ್ಟ್ರಧರ್ಮನಿಷ್ಠಾವಾನ್ ಅಖಂಡಂ ಭಾರತಂ ಸ್ಮರೇತ್ ॥33॥</div>
+    </div>
+    <div class="ekatmata-para fontkannada ">
+
+      <div>ಭಾರತ ಮಾತಾ ಕೀ ಜಯ್</div>
+    </div>
+  </div>
+  <div id="footerseperator" class="separator-thin"></div>
+  <div id="footer" class="heder-container">
+    <div class="left-header"><span class="fontenglish"></span><span class="fontkannada">ಐ. ಟಿ. ಕಾರ್ಯ, ಬೆಂಗಳೂರು ದಕ್ಷಿಣ
+        ವಿಭಾಗ
+      </span> </div>
+    <div class="left-header"><span class="fontkannada">ಮಾರ್ಗಶಿರ,ಪುಷ್ಯ</span>/ <span class="fontdevanagari">
+        मार्गशीर्ष,पौष </span> <span class="fontenglish">5127(December 2025)</span></div>
+    <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
+        दक्षिणा
+        विभाग</span>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  // ...existing code...
+  (function () {
+    // Format today's date as DD-Month-YYYY (e.g., 17-August-2025)
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Ignore time part
+
+    // Helper to parse DD-Month-YYYY to Date
+    function parseDate(str) {
+      const [day, monthName, year] = str.split('-');
+      const monthNames = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+      ];
+      const month = monthNames.indexOf(monthName);
+      return new Date(Number(year), month, Number(day));
+    }
+
+    // Find nearest date row
+    let nearestRow = null;
+    let nearestDiff = Infinity;
+
+    document.querySelectorAll('.pancchang-row').forEach(function (row) {
+      const dateEl = row.querySelector('.panchang-date');
+      if (dateEl) {
+        const rowDate = parseDate(dateEl.textContent.trim());
+        const diff = Math.abs(rowDate - today);
+        if (diff < nearestDiff) {
+          nearestDiff = diff;
+          nearestRow = row;
+        }
+      }
+    });
+
+    document.querySelectorAll('.pancchang-row').forEach(function (row) {
+      if (row === nearestRow) {
+        row.classList.add('panchang-highlight');
+      } else {
+        row.classList.add('panchang-grey');
+      }
+    });
+  })();
+</script>
+
+
+<script>
+  // Get all audio elements on the page
+  const audioElements = document.querySelectorAll("audio[data-playbutton][data-pausebutton]");
+
+  function stopAllExcept(current) {
+    audioElements.forEach(aud => {
+      if (aud !== current) {
+        aud.pause();
+        aud.currentTime = 0;
+
+        // Reset icons
+        const playBtn = document.getElementById(aud.dataset.playbutton);
+        const pauseBtn = document.getElementById(aud.dataset.pausebutton);
+        playBtn.style.display = "inline";
+        pauseBtn.style.display = "none";
+      }
+    });
+  }
+
+  audioElements.forEach(audio => {
+    const playBtn = document.getElementById(audio.dataset.playbutton);
+    const pauseBtn = document.getElementById(audio.dataset.pausebutton);
+
+    // Play button click
+    playBtn.addEventListener("click", () => {
+      stopAllExcept(audio);
+      audio.play();
+      playBtn.style.display = "none";
+      pauseBtn.style.display = "inline";
+    });
+
+    // Pause button click
+    pauseBtn.addEventListener("click", () => {
+      audio.pause();
+      playBtn.style.display = "inline";
+      pauseBtn.style.display = "none";
+    });
+
+    // When audio ends → reset icons
+    audio.addEventListener("ended", () => {
+      playBtn.style.display = "inline";
+      pauseBtn.style.display = "none";
+    });
+  });
+</script>
+
+<script>
+  // Fix print issue - scroll to top before printing
+  // footer is not visible in print if not scrolled to top
+  window.addEventListener('beforeprint', function () {
+    window.scrollTo(0, 0);
+  });
+</script>
+
+
+</html>
