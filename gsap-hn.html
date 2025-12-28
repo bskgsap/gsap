@@ -308,7 +308,12 @@
 </head>
 
 <body>
-
+  <!-- <svg width="24" height="24" viewBox="0 0 24 24" aria-label="Play with timer">
+    <path d="M8 5v14l11-7z" fill="currentColor"></path>
+    <circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <line x1="18" y1="6" x2="18" y2="4" stroke="currentColor" stroke-width="1.5" />
+    <line x1="18" y1="6" x2="19.5" y2="6" stroke="currentColor" stroke-width="1.5" />
+  </svg> -->
 
   <svg style="display:none;">
     <symbol id="icon-play" viewBox="0 0 24 24">
@@ -317,6 +322,13 @@
 
     <symbol id="icon-pause" viewBox="0 0 24 24">
       <path d="M6 5h4v14H6zM14 5h4v14h-4z"></path>
+    </symbol>
+
+    <symbol id="icon-readandfollow" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z" fill="currentColor"></path>
+      <circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5" />
+      <line x1="18" y1="6" x2="18" y2="4" stroke="currentColor" stroke-width="1.5" />
+      <line x1="18" y1="6" x2="19.5" y2="6" stroke="currentColor" stroke-width="1.5" />
     </symbol>
   </svg>
 
@@ -332,8 +344,7 @@
   <div class="sectionheader">
     <span class="fontkannada">ಅಮೃತ ವಚನ - </span><span class="fontdevanagari">अमृतावचन</span>
     <audio id="amruthavachanaAudio" data-playbutton="amruthavachanaAudioplay"
-      data-pausebutton="amruthavachanaAudiopause"
-      src="./GSAP/GSAP_amruthavachana_jan_26.mp3"></audio>
+      data-pausebutton="amruthavachanaAudiopause" src="./GSAP/GSAP_amruthavachana_jan_26.mp3"></audio>
 
     <svg id="amruthavachanaAudioplay" class="audio-icon audio-play">
       <use href="#icon-play"></use>
@@ -343,29 +354,50 @@
       <use href="#icon-pause"></use>
     </svg>
   </div>
+
   <div class="simple-para fontkannada ">
-    <p>ನಮ್ಮ ವೈಯಕ್ತಿಕ ಮತ್ತು ಕುಟುಂಬದ ಸುಖ-ಶಾಂತಿ, ಸಮಾಜದ ಸುವ್ಯವಸ್ಥೆಯ ಮೇಲೆಯೇ ಅವಲಂಬಿತವಾಗಿದೆ. ಸಮಾಜದಲ್ಲಿ ಶಾಂತಿ ಮತ್ತು ಭದ್ರತೆ ಇಲ್ಲದಿದ್ದರೆ, ವ್ಯಕ್ತಿಯ ನೈತಿಕ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಏಳಿಗೆಗೆ ಅಡ್ಡಿಯಾಗುತ್ತದೆ. ಸಮಾಜದ ವಿಘಟನೆಯ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿ ಸತ್ಪುರುಷರು ಕೂಡ ಉಳಿಯುವುದು ಕಷ್ಟವಾಗುತ್ತದೆ. ಆದ್ದರಿಂದ ಸಾಮಾಜಿಕ ಜೀವನವನ್ನು ಆರೋಗ್ಯಕರವಾಗಿಸುವುದು ನಮ್ಮ ಪ್ರಮುಖ ಕರ್ತವ್ಯವಾಗಿದೆ. ಸಮಾಜದ ಮೇಲಿನ ನಮ್ಮ ಸ್ನೇಹ ಮತ್ತು ಆದರವು ನಮ್ಮ ನಡವಳಿಕೆಯಲ್ಲಿ ವ್ಯಕ್ತವಾಗಬೇಕು.</p>
+    <p>ನಮ್ಮ ವೈಯಕ್ತಿಕ ಮತ್ತು ಕುಟುಂಬದ ಸುಖ-ಶಾಂತಿ, ಸಮಾಜದ ಸುವ್ಯವಸ್ಥೆಯ ಮೇಲೆಯೇ ಅವಲಂಬಿತವಾಗಿದೆ. ಸಮಾಜದಲ್ಲಿ ಶಾಂತಿ ಮತ್ತು ಭದ್ರತೆ
+      ಇಲ್ಲದಿದ್ದರೆ, ವ್ಯಕ್ತಿಯ ನೈತಿಕ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಏಳಿಗೆಗೆ ಅಡ್ಡಿಯಾಗುತ್ತದೆ. ಸಮಾಜದ ವಿಘಟನೆಯ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿ ಸತ್ಪುರುಷರು ಕೂಡ
+      ಉಳಿಯುವುದು ಕಷ್ಟವಾಗುತ್ತದೆ. ಆದ್ದರಿಂದ ಸಾಮಾಜಿಕ ಜೀವನವನ್ನು ಆರೋಗ್ಯಕರವಾಗಿಸುವುದು ನಮ್ಮ ಪ್ರಮುಖ ಕರ್ತವ್ಯವಾಗಿದೆ. ಸಮಾಜದ ಮೇಲಿನ ನಮ್ಮ
+      ಸ್ನೇಹ ಮತ್ತು ಆದರವು ನಮ್ಮ ನಡವಳಿಕೆಯಲ್ಲಿ ವ್ಯಕ್ತವಾಗಬೇಕು.</p>
     <div style="font-weight: bold;" class="right-aligned">- ಪರಮ ಪೂಜನೀಯ ಶ್ರೀ ಗುರೂಜಿ </div>
   </div>
   <div class="simple-para fontdevanagari">
-    <p>व्यक्तिगत और पारिवारिक सुख-शांति समाज की सुव्यवस्था पर ही निर्भर है। समाज में यदि शांति और सुरक्षा न हो, तो व्यक्ति का नैतिक और आत्मिक उत्कर्ष भी बाधित हो जाता है। समाज के विघटन की स्थिति में महान आत्माओं का टिक पाना भी कठिन हो जाता है। इसलिए सामाजिक जीवन को स्वस्थ बनाना हमारा प्रधान कर्तव्य है। समाज के प्रति हमारा स्नेह और आदर व्यवहार में प्रकट होना चाहिए।
+    <p>व्यक्तिगत और पारिवारिक सुख-शांति समाज की सुव्यवस्था पर ही निर्भर है। समाज में यदि शांति और सुरक्षा न हो, तो
+      व्यक्ति का नैतिक और आत्मिक उत्कर्ष भी बाधित हो जाता है। समाज के विघटन की स्थिति में महान आत्माओं का टिक पाना भी
+      कठिन हो जाता है। इसलिए सामाजिक जीवन को स्वस्थ बनाना हमारा प्रधान कर्तव्य है। समाज के प्रति हमारा स्नेह और आदर
+      व्यवहार में प्रकट होना चाहिए।
     </p>
     <div style="font-weight: bold;" class="right-aligned">- परम पूजनीय श्री गुरूजी</div>
   </div>
   <div class="sectionheader">
     <span class="fontkannada">ಗೀತೆ - </span><span class="fontdevanagari">गीत </span>
-    <a href="https://www.youtube.com/watch?v=u9MT1U80I-U" target="_blank" rel="noopener">
-      <span class="geeturl fontenglish">(https://www.youtube.com/watch?v=u9MT1U80I-U)</span>
+    <span>
+      <audio id="geeethAudio" data-playbutton="geeethPlay"
+        data-pausebutton="geeethPause" src="./GSAP/GSAP_geeth_jan_26.mp3"></audio>
 
-      <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-        <path
-          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02zm2.5 0c0 3.04-1.72 5.64-4.24 6.92l1.42 1.42C19.1 18.65 21 15.53 21 12s-1.9-6.65-4.82-8.34l-1.42 1.42C17.28 6.36 19 8.96 19 12z" />
+      <svg id="geeethPlay" class="audio-icon audio-play">
+        <use href="#icon-play"></use>
       </svg>
-    </a>
+      <svg id="geeethPause" class="audio-icon audio-pause" style="display:none;">
+        <use href="#icon-pause"></use>
+      </svg>
+    </span>
+    <span>
+      <audio id="geethPracticeAudio" data-playbutton="geethPracticeAudioPlay"
+        data-pausebutton="geethPracticeAudioPause" src="./GSAP/GSAP_geeth_jan_practice_26.mp3"></audio>
+
+      <svg id="geethPracticeAudioPlay" class="audio-icon audio-play">
+        <use href="#icon-readandfollow"></use>
+      </svg>
+      <svg id="geethPracticeAudioPause" class="audio-icon audio-pause" style="display:none;">
+        <use href="#icon-pause"></use>
+      </svg>
+    </span>
   </div>
   <div class="table-responsive">
     <div class="column fontkannada">
-      <div>ಪುಣ್ಯಭೂಮಿ ಭಾರತಿನಾ ಅಮೃತ ಪುತ್ರೋ ಆಮೆ</div> 
+      <div>ಪುಣ್ಯಭೂಮಿ ಭಾರತಿನಾ ಅಮೃತ ಪುತ್ರೋ ಆಮೆ</div>
       <div>ಸತ್ಯ ಸಮರ್ಪಣ ಸದಾ ಥಶೆ ಅಹಿಂ...</div>
       <div>ಸಿಂಹ ಶಾವಕೋ ಆಮೆ ಶಕ್ತಿ ಪೂಜಕೋ ಆಮೆ</div>
       <div>ಅಂತರಮಾಂ ನಿರ್ಭಯತಾ ಛೆ ಅಹಿಂ...(೨) ॥ಪ॥</div>
@@ -376,7 +408,7 @@
       <div>ಧ್ಯೇಯ ಪೂರ್ಣತಾ ಹವೇ ಧ್ಯೇಯ ಪೂರ್ಣತಾ ಹವೇ</div>
       <div>ಏಜ ಏಕ ವಾತ ಛೆ ಏಥೀ ಯೋಛುಂ ಕಶುಂ ಜಖೇ ನಹಿ...॥೧॥</div>
 
-       <div class="smallparasep"></div>
+      <div class="smallparasep"></div>
       <div>ಹಿಂದುಜನ ಆಜ ಸೌ ಸಂಘ ಬನಿ ಚಾಲಶೆ</div>
       <div>ಶಕ್ತಿರೂಪ ದರ್ಶನ ಥಿ ವಿಶ್ವಮಾಂ ಜಗಾವಶೆ...</div>
       <div>ಕಾಯರತಾ ತ್ಯಾಗಥಿ ಕಾಯರತಾ ತ್ಯಾಗಥಿ</div>
@@ -389,27 +421,27 @@
       <div>ಅಡಗ ಆಂಖ ರಾಖಜೋ ಸ್ವಾಭಿಮಾನ ಜಾಗೆ ಭಾರತ ಮಹೀಂ... ॥೩॥</div>
     </div>
     <div class="column fontdevanagari">
-      <div>पुण्यभूमि भारतीना, अमृत पुत्रो अमें</div> 
+      <div>पुण्यभूमि भारतीना, अमृत पुत्रो अमें</div>
       <div>सत्य समर्पण सदा थशे अहींऽ</div>
       <div>सिंह सावको अमें, शक्तिपुजको अमें</div>
       <div>अंतरमां निर्भयता छे अहींऽ ॥2॥</div>
 
       <div class="smallparasep"></div>
-      <div>कंटकमय मार्ग पर  अणथक पग चालशे </div> 
+      <div>कंटकमय मार्ग पर अणथक पग चालशे </div>
       <div>आंधी तुफान भले मार्ग बनी आवशे</div>
-      <div>ध्येय पुर्णता हवे, ध्येय पुर्णता हवे</div> 
+      <div>ध्येय पुर्णता हवे, ध्येय पुर्णता हवे</div>
       <div>एज एक वात छे एथी ओछुं कशुं जखे नही...</div>
-       
+
 
       <div class="smallparasep"></div>
-      <div>हिंदुजन आज सौ  रुह बनी चालशे</div> 
+      <div>हिंदुजन आज सौ रुह बनी चालशे</div>
       <div>शक्तिरुप दर्शनथी विश्वमां जगावशे...</div>
-      <div>कायरता त्यागथी  कायरता त्यागथी </div> 
+      <div>कायरता त्यागथी कायरता त्यागथी </div>
       <div>निर्बळता छोडीने शक्तिसाधना पुन: थशे अहीं...</div>
-       
+
 
       <div class="smallparasep"></div>
-      <div>शस्त्र अस्त्र शक्तिथी राष्ट्र सज्ज हो सदा </div> 
+      <div>शस्त्र अस्त्र शक्तिथी राष्ट्र सज्ज हो सदा </div>
       <div>अनुशक्ति आयुधथी राष्ट्र सिध्ध हो सदा...</div>
       <div>वर्तमान पारखजो वर्तमान पारखजो</div>
       <div>अडग आंख राखजो स्वाभिमान जागे भारत महीं...</div>
@@ -420,7 +452,7 @@
 
   <div class="sectionheader">
     <span class="fontkannada">ಸುಭಾಷಿತ - </span><span class="fontdevanagari">सुभाषित </span>
-    <audio id="subhashitaAudio" data-playbutton="subhashitaAudioplay" data-pausebutton="subhashitaAudiopause"
+    <!-- <audio id="subhashitaAudio" data-playbutton="subhashitaAudioplay" data-pausebutton="subhashitaAudiopause"
       src="./GSAP/GSAP_Subhashitha_dec_25.mp3"></audio>
 
     <svg id="subhashitaAudioplay" class="audio-icon audio-play">
@@ -429,7 +461,7 @@
 
     <svg id="subhashitaAudiopause" class="audio-icon audio-pause" style="display:none;">
       <use href="#icon-pause"></use>
-    </svg>
+    </svg> -->
 
   </div>
   <div class="table-responsive">
@@ -443,7 +475,9 @@
       <p></p>
       <div>
         <span>ಅರ್ಥ:</span>
-        <span>ಮನುಷ್ಯನು ತನ್ನ ಚಾರಿತ್ರ್ಯತೆಯನ್ನು ದೃಢ ನಿಷ್ಠೆ ಮತ್ತು ನಿರಂತರ ಪ್ರಯತ್ನದಿಂದ ಕಾಪಾಡಿಕೊಳ್ಳಬೇಕು. ಏಕೆಂದರೆ ಸಂಪತ್ತು ಅಸ್ಥಿರವಾದುದು — ಅದು ಕೆಲವೊಮ್ಮೆ ಬರುತ್ತದೆ, ಕೆಲವೊಮ್ಮೆ ಹೋಗುತ್ತದೆ. ಸಂಪತ್ತನ್ನು ಕಳೆದುಕೊಂಡರೆ ಮನುಷ್ಯನು ಸಂಪೂರ್ಣವಾಗಿ ನಾಶವಾಗುವುದಿಲ್ಲ,ಆದರೆ ಚಾರಿತ್ರ್ಯತೆ ನಾಶವಾದರೆ, ಅವನು ನಿಜಾರ್ಥದಲ್ಲಿ ಪತನಗೊಂಡವನಾಗಿ ಸಂಪೂರ್ಣವಾಗಿ ನಾಶವಾಗುತ್ತಾನೆ.</span>
+        <span>ಮನುಷ್ಯನು ತನ್ನ ಚಾರಿತ್ರ್ಯತೆಯನ್ನು ದೃಢ ನಿಷ್ಠೆ ಮತ್ತು ನಿರಂತರ ಪ್ರಯತ್ನದಿಂದ ಕಾಪಾಡಿಕೊಳ್ಳಬೇಕು. ಏಕೆಂದರೆ ಸಂಪತ್ತು
+          ಅಸ್ಥಿರವಾದುದು — ಅದು ಕೆಲವೊಮ್ಮೆ ಬರುತ್ತದೆ, ಕೆಲವೊಮ್ಮೆ ಹೋಗುತ್ತದೆ. ಸಂಪತ್ತನ್ನು ಕಳೆದುಕೊಂಡರೆ ಮನುಷ್ಯನು ಸಂಪೂರ್ಣವಾಗಿ
+          ನಾಶವಾಗುವುದಿಲ್ಲ,ಆದರೆ ಚಾರಿತ್ರ್ಯತೆ ನಾಶವಾದರೆ, ಅವನು ನಿಜಾರ್ಥದಲ್ಲಿ ಪತನಗೊಂಡವನಾಗಿ ಸಂಪೂರ್ಣವಾಗಿ ನಾಶವಾಗುತ್ತಾನೆ.</span>
       </div>
       <!-- <div> <span style="font-style: italic;">ಆಧಾರ: ಶ್ರೀಮದ್ ಭಗವದ್ಗೀತೆ</span></div> -->
     </div>
@@ -457,15 +491,15 @@
       <div>
         <span>अर्थ:</span>
         <span>
-  मनुष्य को अपनी सच्चरित्रता की रक्षा दृढ़ निष्ठा और सतत प्रयास से करनी चाहिए, क्योंकि धन अस्थिर होता है — वह कभी प्राप्त होता है, कभी चला जाता है। धन की हानि से मनुष्य नष्ट नहीं होता, परन्तु यदि चरित्र नष्ट हो जाए, तो वह वास्तविक रूप से पतित और विनष्ट हो जाता है।
+          मनुष्य को अपनी सच्चरित्रता की रक्षा दृढ़ निष्ठा और सतत प्रयास से करनी चाहिए, क्योंकि धन अस्थिर होता है — वह
+          कभी प्राप्त होता है, कभी चला जाता है। धन की हानि से मनुष्य नष्ट नहीं होता, परन्तु यदि चरित्र नष्ट हो जाए, तो
+          वह वास्तविक रूप से पतित और विनष्ट हो जाता है।
 
         </span>
       </div>
       <!-- <div><span style="font-style: italic;"> आधार: श्रीमद् भगवद्गीता</span></div> -->
     </div>
   </div>
-
-
 
   <div class="table-pancang-specialday">
     <div class="column-panchang">
@@ -478,55 +512,55 @@
       <div class="simple-para fontdevanagari ">
         कलियुगाब्ध 5127, शालिवाहन शक 1948, विश्वावासु सम्वत्सर
       </div>
-    <div class="panchanga-content">
-      <div class="pancchang-row">
-        <div class="panchang-text">
-          <div class="fontkannada">
-            ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಪ್ರತಿಪದಾ ತಿಥಿ, ಪುನರ್ವಸು ನಕ್ಷತ್ರ
+      <div class="panchanga-content">
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">
+              ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಪ್ರತಿಪದಾ ತಿಥಿ, ಪುನರ್ವಸು ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">
+              दक्षिणायन, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, प्रतिपदा तिथि, पुनर्वसु नक्षत्र
+            </div>
           </div>
-          <div class="fontdevanagari">
-            दक्षिणायन, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, प्रतिपदा तिथि, पुनर्वसु नक्षत्र
-          </div>
+          <div class="panchang-date fontenglish">04-January-2026</div>
         </div>
-        <div class="panchang-date fontenglish">04-January-2026</div>
-      </div>
 
-      <div class="pancchang-row">
-        <div class="panchang-text">
-          <div class="fontkannada">
-            ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಚಿತ್ರಾ ನಕ್ಷತ್ರ
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">
+              ದಕ್ಷಿಣಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಅಷ್ಟಮಿ ತಿಥಿ, ಚಿತ್ರಾ ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">
+              दक्षिणायन, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, अष्टमी तिथि, चित्रा नक्षत्र
+            </div>
           </div>
-          <div class="fontdevanagari">
-            दक्षिणायन, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, अष्टमी तिथि, चित्रा नक्षत्र
-          </div>
+          <div class="panchang-date fontenglish">11-January-2026</div>
         </div>
-        <div class="panchang-date fontenglish">11-January-2026</div>
-      </div>
 
-      <div class="pancchang-row">
-        <div class="panchang-text">
-          <div class="fontkannada">
-            ಉತ್ತರಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಅಮಾವಾಸ್ಯಾ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">
+              ಉತ್ತರಾಯಣ, ಹೇಮಂತ ಋತು, ಪುಷ್ಯ ಮಾಸ, ಕೃಷ್ಣ ಪಕ್ಷ, ಅಮಾವಾಸ್ಯಾ ತಿಥಿ, ಪೂರ್ವಾಷಾಢ ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">
+              उत्तरायण, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, अमावस्या तिथि, पूर्वाषाढ़ा नक्षत्र
+            </div>
           </div>
-          <div class="fontdevanagari">
-            उत्तरायण, हेमन्त ऋतु, पौष मास, कृष्ण पक्ष, अमावस्या तिथि, पूर्वाषाढ़ा नक्षत्र
-          </div>
+          <div class="panchang-date fontenglish">18-January-2026</div>
         </div>
-        <div class="panchang-date fontenglish">18-January-2026</div>
-      </div>
 
-      <div class="pancchang-row">
-        <div class="panchang-text">
-          <div class="fontkannada">
-            ಉತ್ತರಾಯಣ, ಶಿಶಿರ ಋತು, ಮಾಘ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಸಪ್ತಮಿ ತಿಥಿ, ರೇವತಿ ನಕ್ಷತ್ರ
+        <div class="pancchang-row">
+          <div class="panchang-text">
+            <div class="fontkannada">
+              ಉತ್ತರಾಯಣ, ಶಿಶಿರ ಋತು, ಮಾಘ ಮಾಸ, ಶುಕ್ಲ ಪಕ್ಷ, ಸಪ್ತಮಿ ತಿಥಿ, ರೇವತಿ ನಕ್ಷತ್ರ
+            </div>
+            <div class="fontdevanagari">
+              उत्तरायण, शिशिर ऋतु, माघ मास, शुक्ल पक्ष, सप्तमी तिथि, रेवती नक्षत्र
+            </div>
           </div>
-          <div class="fontdevanagari">
-            उत्तरायण, शिशिर ऋतु, माघ मास, शुक्ल पक्ष, सप्तमी तिथि, रेवती नक्षत्र
-          </div>
+          <div class="panchang-date fontenglish">25-January-2026</div>
         </div>
-        <div class="panchang-date fontenglish">25-January-2026</div>
       </div>
-    </div>
 
     </div>
     <div class="column-visheshadina">
@@ -717,7 +751,7 @@
         ವಿಭಾಗ
       </span> </div>
     <div class="left-header"><span class="fontkannada">ಪುಷ್ಯ,ಮಾಘ </span>/ <span class="fontdevanagari">
-        पौष,माघ  </span> <span class="fontenglish">5127(January 2026)</span></div>
+        पौष,माघ </span> <span class="fontenglish">5127(January 2026)</span></div>
     <div class="right-header"><span class="fontenglish"> </span><span class="fontdevanagari">आई. टी. कार्य,बेंगलुरु
         दक्षिणा
         विभाग</span>
